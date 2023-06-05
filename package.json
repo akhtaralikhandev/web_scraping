@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "",
   "main": "tailwind.config.js",
+   "engines": {
+    "node": "16.14.0"
+  },
   "scripts": {
     "build": "webpack --mode production",
     "test": "echo \"Error: no test specified\" && exit 1"
