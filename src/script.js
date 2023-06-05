@@ -23,3 +23,32 @@ window.addEventListener("resize", () => {
     navLinks.classList.remove("nav-active");
   }
 });
+
+const scrollButton = document.getElementById("scrollButton");
+
+scrollButton.addEventListener("click", () => {
+  window.scrollTo({ top: 0, behavior: "smooth" });
+});
+
+window.addEventListener("scroll", () => {
+  if (window.scrollY > 200) {
+    scrollButton.classList.add("show");
+  } else {
+    scrollButton.classList.remove("show");
+  }
+});
+document.addEventListener("DOMContentLoaded", function () {
+  const textContainer = document.getElementById("animated-text");
+  const text = textContainer.innerText;
+  let animatedText = "";
+
+  for (let i = 0; i < text.length; i++) {
+    if (text[i] === " ") {
+      animatedText += " ";
+    } else {
+      animatedText += `<span class="animate-letter">${text[i]}</span>`;
+    }
+  }
+
+  textContainer.innerHTML = animatedText;
+});
