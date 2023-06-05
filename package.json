@@ -4,7 +4,7 @@
   "description": "",
   "main": "tailwind.config.js",
    "engines": {
-    "node": "16.14.0"
+    "node": "18.x"
   },
   "scripts": {
     "build": "webpack --mode production",
