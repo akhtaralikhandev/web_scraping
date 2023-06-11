@@ -8,23 +8,30 @@
     <title>Blogs</title>
     <link rel="stylesheet" href="../dist/output.css" />
     <link rel="stylesheet" href="./index.css">
+        <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
 </head>
 
 <body>
     <!-- navbar  -->
-    <nav id="navbar" class="p-4 pl-14 md:text-xl md:pr-14 nav">
-        <a href="index.html">
-            <div class="logo xl:pl-14 lg:pl-14 pl-4 cursor-pointer md:text-3xl font-bold">
+    <nav id="navbar" class="p-4 flex justify-between  xl:pr-14 lg:pr-32 lg:pl-14 md:text-xl md:pr-14 nav">
+        <a style="flex-grow: 5;" href="index.html" class=" xl:pl-20">
+            <div class="logo d cursor-pointer md:text-3xl font-bold">
                 <img class="xl:h-14 h-12" src="./public/footer/Group 1000006208.png" alt="">
             </div>
         </a>
-        <ul class="nav-links flex items-center">
-            <li><a href="whyus.html">Why us?<i class="fa fa-caret-down" aria-hidden="true"></i></a></li>
-            <li><a href="services.html">Services<i class="fa fa-caret-down" aria-hidden="true"></i></a></li>
-            <li><a href="company.html">Company<i class="fa fa-caret-down" aria-hidden="true"></i></a></li>
-            <li><a href="blog.html">Blog<i class="fa fa-caret-down" aria-hidden="true"></i></a></li>
-            <li class="xl:p-2 lg:p-2 talk-to_expert rounded-lg flex items-center  "><a href="contactus.html">Talk to an
+        <ul style="flex-grow: 4;" class="nav-links flex  gap-8  items-center justify-end  xl:pr-20 ">
+            <li class="flex gap-8"><a href="whyus.html"><span>Why us?</span>
+                    <i class="fa fa-caret-down" aria-hidden="true"></i></a></li>
+            <li class="flex gap-8"> <a href="services.html"><span> Services</span> <i class="fa fa-caret-down"
+                        aria-hidden="true"></i></a></li>
+            <li class="flex gap-8"><a href="company.html"><span> Company</span> <i class="fa fa-caret-down"
+                        aria-hidden="true"></i></a></li>
+            <li class="flex gap-8"><a href="blog.html"><span>Blog </span>
+            <li style="background-color:#FFB400; font-family: Poppins; color:#143F64"
+                class="xl:p-3 shadow-lg lg:p-3 talk-to_expert  hover:bg-yellow-500 flex items-center font-bold "><a
+                    class="xl:p-2 lg:p-2 p-1  shadow-lg" href="contactus.html">Talk to an
                     Expert</a>
             </li>
         </ul>
@@ -36,169 +43,363 @@
 
         </div>
     </nav>
-    <section class="xl:p-24 lg:-16 p-8">
-        <div class="flex gap-4  justify-between">
-            <div class="flex flex-col gap-4">
-                <span style="color:#2B5B84" class="xl:text-3xl font-bold">Scrapulse Blog</span>
-                <span style="color:#323C46">Our blogs will help you to understand the
-                    power of web scraping in a easy way!</span>
+    <div class="w-1 h-1 navbar_line">
+
+    </div>
+    <section class="xl:p-24 lg:p-16 p-8">
+        <div class="flex gap-4 items-center justify-between">
+            <div class="flex flex-1 flex-col items-start justify-start xl:gap-10">
+                <span style="color:#2B5B84" class="xl:text-6xl font-bold">Scrapulse Blog</span>
+                <div style="color: #323C46 " class="flex flex-col xl:text-2xl gap-2">
+                    <span style="color:#323C46">Our blogs will help you to understand the</span>
+                    <span style="color:#323C46">power of web scraping in a easy way!</span>
+                </div>
             </div>
-            <div>
+            <div class="flex flex-1   items-center justify-center">
                 <img src="./public/blog/image 30.png" alt="">
             </div>
         </div>
-        <div class="w-full  mt-8 xl:pl-32 lg:pr-32">
-            <div class="w-full rounded-lg flex items-center pr-3 justify-center  border border-blue-950">
-                <input class="w-full outline-none xl:p-3 lg:p-3 md:p-3 p-2 rounded-lg" type="text"
+        <div style="border: 1px solid #0C406D" class="w-full  mt-8 ">
+            <div class="w-full  flex items-center rounded-sm pr-3 justify-center  border border-blue-950">
+                <input class="w-full outline-none  text-xl xl:p-3 lg:p-3 md:p-3 p-2 " type="text"
                     placeholder="search blog here">
-                <i class="fa fa-search xl:text-2xl text-xl" aria-hidden="true"></i>
+                <i style="font-size: larger;" class="fa fa-search " aria-hidden="true"></i>
             </div>
 
         </div>
     </section>
     <section class="xl:pl-24 xl:pr-24 flex-wrap  flex justify-between">
-        <button style="color:#5C90BC"
-            class="border border-slate-200 p-2 rounded-lg hover:bg-blue-800 hover:text-white">All</button>
-        <button style="color:#5C90BC"
-            class="border border-slate-200 p-2 rounded-lg hover:bg-blue-800 hover:text-white">Web Scraping</button>
-        <button style="color:#5C90BC"
-            class="border border-slate-200 p-2 rounded-lg hover:bg-blue-800 hover:text-white">Mastering Web
+        <button 
+            class="border border-slate-200 p-2 rounded-lg blogs_button hover:text-white">All</button>
+        <button 
+            class="border active_blog border-slate-200 p-2 rounded-lg blogs_button  hover:text-white">Web Scraping</button>
+        <button 
+            class="border  border-slate-200 p-2 rounded-lg blogs_button  hover:text-white">Mastering Web
             Scraping</button>
-        <button style="color:#5C90BC"
-            class="border border-slate-200 p-2 rounded-lg hover:bg-blue-800 hover:text-white">Web Scraping
+        <button 
+            class="border border-slate-200 p-2 rounded-lg blogs_button ">Web Scraping
             Challenges</button>
-        <button style="color:#5C90BC" class="border border-slate-200 p-2 rounded-lg hover:bg-blue-800 hover:text-white"
-            class="border border-slate-200 p-2 rounded-lg hover:bg-blue-800 hover:text-white">Strategies and Tools
+        <button class="border border-slate-200 p-2 rounded-lg blogs_button  hover:text-white">Strategies and Tools
         </button>
-        <button style="color:#5C90BC"
-            class="border border-slate-200 p-2 rounded-lg hover:bg-blue-800 hover:text-white">Scraping in
+        <button 
+            class="border border-slate-200 p-2 rounded-lg blogs_button hover:text-white">Scraping in
             Action</button>
     </section>
+
     <section
-        class="section10  gap-14    justify-center items-center flex-col flex xl:pt-6 xl:pb-14 p-14 lg:pb-46 md:pb-14 pb-8">
-        <div>
-            <span class="xl:text-3xl font-bold lg:text-2xl text-xl top_solutions">Learn & Be Inspired</span>
-        </div>
-        <div class="flex flex-col gap-8">
+        class="section10  gap-14    justify-center items-center flex-col xl:pl-24 xl:pr-24 flex xl:pt-6 xl:pb-14 p-14 lg:pb-46 md:pb-14 pb-8">
+       
+        <div style="font-family: Poppins;" class="flex flex-col gap-8">
             <div class="flex gap-8 xl:flex-nowrap lg:flex-nowrap flex-wrap">
                 <div class="flex flex-col gap-3">
                     <img src="./public/inspired/Mask group.png" alt="">
                     <div class="flex flex-col gap-4">
-                        <div class="flex flex-col ">
-                            <span class="marketing_span  text-xl  font-bold">15 Mar . Marketing</span>
-                            <span class="transfrom_text_span marketing_span xl:text-2xl text-2xl font-bold">Transform
+                        <div class="flex flex-col gap-2 ">
+                            <span class="marketing_span  text-sm font-bold">15 Mar
+                                <span
+                                    style="background-color: #143F64; display: inline-block; width: 8px; height: 8px; border-radius: 50%;"></span>
+                                Marketing</span>
+                            <span class="transfrom_text_span marketing_span xl:text-xl text-2xl font-bold">Transform
                                 Your Data Engineering</span>
                         </div>
                         <div>
-                            <span class="before_you_choose_span">
+                            <span style="color: #323C46" class="before_you_choose_span">
                                 Before you choose a domain name, check to see that it isn’t already trademarked by
                                 another firm that holds the copyright.
                             </span>
                         </div>
+                        <div class="flex items-center  xl:gap-8">
+                            <div class="flex items-center justify-between gap-2">
+                                <span><img src="./public/likes/image 2.png" alt=""></span>
+                                <span class="text-sm" style="color: #7086A4">25.2k</span>
+                            </div>
+                             <div class="flex items-center justify-between gap-2">
+                                <span><img src="./public/likes/image 3.png" alt=""></span>
+                                <span class="text-sm" style="color: #7086A4">9.2k</span>
+                            </div>
+                            <div class="flex items-center justify-between gap-2">
+                                <span><img src="./public/likes/image 223.png" alt=""></span>
+                                <span class="text-sm" style="color: #7086A4">9.2k</span>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
                 <div class="flex flex-col gap-3">
                     <img src="./public/inspired/Mask group (1).png" alt="">
                     <div class="flex flex-col gap-4">
-                        <div class="flex flex-col ">
-                            <span class="marketing_span  text-xl  font-bold">18 Feb Marketing</span>
-                            <span class="transfrom_text_span marketing_span xl:text-2xl text-2xl font-bold">Transform
+                        <div class="flex flex-col gap-2 ">
+                            <span class="marketing_span  text-sm  font-bold">18 Feb <span
+                                    style="background-color: #143F64; display: inline-block; width: 8px; height: 8px; border-radius: 50%;"></span>
+                                Marketing</span>
+                            <span class="transfrom_text_span marketing_span xl:text-xl text-xl font-bold">Transform
                                 Tackling Inefficient Data</span>
                         </div>
                         <div>
-                            <span class="before_you_choose_span">
+                            <span style="color: #323C46" class="before_you_choose_span">
                                 Before you choose a domain name, check to see that it isn’t already trademarked by
                                 another firm that holds the copyright.
                             </span>
                         </div>
                     </div>
+                       <div class="flex items-center  xl:gap-8">
+                            <div class="flex items-center justify-between gap-2">
+                                <span><img src="./public/likes/image 2.png" alt=""></span>
+                                <span class="text-sm" style="color: #7086A4">25.2k</span>
+                            </div>
+                             <div class="flex items-center justify-between gap-2">
+                                <span><img src="./public/likes/image 3.png" alt=""></span>
+                                <span class="text-sm" style="color: #7086A4">9.2k</span>
+                            </div>
+                            <div class="flex items-center justify-between gap-2">
+                                <span><img src="./public/likes/image 223.png" alt=""></span>
+                                <span class="text-sm" style="color: #7086A4">9.2k</span>
+                            </div>
+                        </div>
                 </div>
                 <div class="flex flex-col gap-3">
                     <img src="./public/inspired/Mask group (2).png" alt="">
                     <div class="flex flex-col gap-4">
-                        <div class="flex flex-col ">
-                            <span class="marketing_span  text-xl  font-bold">12 May Marketing</span>
-                            <span class="transfrom_text_span marketing_span xl:text-2xl text-2xl font-bold">Transform
+                        <div class="flex flex-col gap-2">
+                            <span class="marketing_span  text-sm  font-bold">12 May <span
+                                    style="background-color: #143F64; display: inline-block; width: 8px; height: 8px; border-radius: 50%;"></span>
+                                Marketing</span>
+                            <span class="transfrom_text_span marketing_span xl:text-xl text-xl font-bold">Transform
                                 Data-Driven Growth</span>
                         </div>
                         <div>
-                            <span class="before_you_choose_span">
+                            <span style="color: #323C46" class="before_you_choose_span">
                                 Before you choose a domain name, check to see that it isn’t already trademarked by
                                 another firm that holds the copyright.
                             </span>
                         </div>
                     </div>
+                       <div class="flex items-center  xl:gap-8">
+                            <div class="flex items-center justify-between gap-2">
+                                <span><img src="./public/likes/image 2.png" alt=""></span>
+                                <span class="text-sm" style="color: #7086A4">25.2k</span>
+                            </div>
+                             <div class="flex items-center justify-between gap-2">
+                                <span><img src="./public/likes/image 3.png" alt=""></span>
+                                <span class="text-sm" style="color: #7086A4">9.2k</span>
+                            </div>
+                            <div class="flex items-center justify-between gap-2">
+                                <span><img src="./public/likes/image 223.png" alt=""></span>
+                                <span class="text-sm" style="color: #7086A4">9.2k</span>
+                            </div>
+                        </div>
                 </div>
-
             </div>
             <div class="flex gap-8 xl:flex-nowrap lg:flex-nowrap flex-wrap">
                 <div class="flex flex-col gap-3">
                     <img src="./public/inspired/Mask group (3).png" alt="">
                     <div class="flex flex-col gap-4">
-                        <div class="flex flex-col ">
-                            <span class="marketing_span  text-xl  font-bold">21 Mar Analyzing</span>
-                            <span class="transfrom_text_span marketing_span xl:text-2xl text-2xl font-bold">Web Data
+                        <div class="flex flex-col gap-2">
+                            <span class="marketing_span  text-sm  font-bold">21 Mar <span
+                                    style="background-color: #143F64; display: inline-block; width: 8px; height: 8px; border-radius: 50%;"></span>
+                                Analyzing</span>
+                            <span class="transfrom_text_span marketing_span xl:text-xl text-xl font-bold">Web Data
                                 Extraction </span>
                         </div>
                         <div>
-                            <span class="before_you_choose_span">
+                            <span style="color: #323C46" class="before_you_choose_span">
                                 Before you choose a domain name, check to see that it isn’t already trademarked by
                                 another firm that holds the copyright.
                             </span>
                         </div>
                     </div>
+                       <div class="flex items-center  xl:gap-8">
+                            <div class="flex items-center justify-between gap-2">
+                                <span><img src="./public/likes/image 2.png" alt=""></span>
+                                <span class="text-sm" style="color: #7086A4">25.2k</span>
+                            </div>
+                             <div class="flex items-center justify-between gap-2">
+                                <span><img src="./public/likes/image 3.png" alt=""></span>
+                                <span class="text-sm" style="color: #7086A4">9.2k</span>
+                            </div>
+                            <div class="flex items-center justify-between gap-2">
+                                <span><img src="./public/likes/image 223.png" alt=""></span>
+                                <span class="text-sm" style="color: #7086A4">9.2k</span>
+                            </div>
+                        </div>
                 </div>
                 <div class="flex flex-col gap-3">
                     <img src="./public/inspired/Mask group (4).png" alt="">
                     <div class="flex flex-col gap-4">
-                        <div class="flex flex-col ">
-                            <span class="marketing_span  text-xl  font-bold">15 Mar Scraping</span>
-                            <span class="transfrom_text_span marketing_span xl:text-2xl text-2xl font-bold">The Future
+                        <div class="flex flex-col gap-2">
+                            <span class="marketing_span  text-sm  font-bold">15 Mar <span
+                                    style="background-color: #143F64; display: inline-block; width: 8px; height: 8px; border-radius: 50%;"></span>
+                                Scraping</span>
+                            <span class="transfrom_text_span marketing_span xl:text-xl text-xl font-bold">The Future
                                 of Web Data</span>
                         </div>
                         <div>
-                            <span class="before_you_choose_span">
+                            <span style="color: #323C46" class="before_you_choose_span">
                                 Before you choose a domain name, check to see that it isn’t already trademarked by
                                 another firm that holds the copyright.
                             </span>
                         </div>
                     </div>
+                       <div class="flex items-center  xl:gap-8">
+                            <div class="flex items-center justify-between gap-2">
+                                <span><img src="./public/likes/image 2.png" alt=""></span>
+                                <span class="text-sm" style="color: #7086A4">25.2k</span>
+                            </div>
+                             <div class="flex items-center justify-between gap-2">
+                                <span><img src="./public/likes/image 3.png" alt=""></span>
+                                <span class="text-sm" style="color: #7086A4">9.2k</span>
+                            </div>
+                            <div class="flex items-center justify-between gap-2">
+                                <span><img src="./public/likes/image 223.png" alt=""></span>
+                                <span class="text-sm" style="color: #7086A4">9.2k</span>
+                            </div>
+                        </div>
                 </div>
                 <div class="flex flex-col gap-3">
                     <img src="./public/inspired/Mask group (5).png" alt="">
                     <div class="flex flex-col gap-4">
-                        <div class="flex flex-col ">
-                            <span class="marketing_span  text-xl  font-bold">15 Mar Marketing</span>
-                            <span class="transfrom_text_span marketing_span xl:text-2xl text-2xl font-bold">Transform
-                                How to Gather Data Ethically</span>
+                        <div class="flex flex-col gap-2">
+                            <span class="marketing_span  text-sm  font-bold">15 Mar <span
+                                    style="background-color: #143F64; display: inline-block; width: 8px; height: 8px; border-radius: 50%;"></span>
+                                Marketing</span>
+                            <span class="transfrom_text_span marketing_span xl:text-xl text-xl font-bold">Transform
+                                How to Gather Data </span>
                         </div>
                         <div>
-                            <span class="before_you_choose_span">
+                            <span style="color: #323C46" class="before_you_choose_span">
                                 Before you choose a domain name, check to see that it isn’t already trademarked by
                                 another firm that holds the copyright.
                             </span>
                         </div>
                     </div>
+                       <div class="flex items-center  xl:gap-8">
+                            <div class="flex items-center justify-between gap-2">
+                                <span><img src="./public/likes/image 2.png" alt=""></span>
+                                <span class="text-sm" style="color: #7086A4">25.2k</span>
+                            </div>
+                             <div class="flex items-center justify-between gap-2">
+                                <span><img src="./public/likes/image 3.png" alt=""></span>
+                                <span class="text-sm" style="color: #7086A4">9.2k</span>
+                            </div>
+                            <div class="flex items-center justify-between gap-2">
+                                <span><img src="./public/likes/image 223.png" alt=""></span>
+                                <span class="text-sm" style="color: #7086A4">9.2k</span>
+                            </div>
+                        </div>
+                </div>
+
+            </div>
+            
+  <div class="flex gap-8 xl:flex-nowrap lg:flex-nowrap flex-wrap">
+                <div class="flex flex-col gap-3">
+                    <img src="./public/inspired/Mask group (3).png" alt="">
+                    <div class="flex flex-col gap-4">
+                        <div class="flex flex-col gap-2">
+                            <span class="marketing_span  text-sm  font-bold">21 Mar <span
+                                    style="background-color: #143F64; display: inline-block; width: 8px; height: 8px; border-radius: 50%;"></span>
+                                Analyzing</span>
+                            <span class="transfrom_text_span marketing_span xl:text-xl text-xl font-bold">Web Data
+                                Extraction </span>
+                        </div>
+                        <div>
+                            <span style="color: #323C46" class="before_you_choose_span">
+                                Before you choose a domain name, check to see that it isn’t already trademarked by
+                                another firm that holds the copyright.
+                            </span>
+                        </div>
+                    </div>
+                       <div class="flex items-center  xl:gap-8">
+                            <div class="flex items-center justify-between gap-2">
+                                <span><img src="./public/likes/image 2.png" alt=""></span>
+                                <span class="text-sm" style="color: #7086A4">25.2k</span>
+                            </div>
+                             <div class="flex items-center justify-between gap-2">
+                                <span><img src="./public/likes/image 3.png" alt=""></span>
+                                <span class="text-sm" style="color: #7086A4">9.2k</span>
+                            </div>
+                            <div class="flex items-center justify-between gap-2">
+                                <span><img src="./public/likes/image 223.png" alt=""></span>
+                                <span class="text-sm" style="color: #7086A4">9.2k</span>
+                            </div>
+                        </div>
+                </div>
+                <div class="flex flex-col gap-3">
+                    <img src="./public/inspired/Mask group (4).png" alt="">
+                    <div class="flex flex-col gap-4">
+                        <div class="flex flex-col gap-2">
+                            <span class="marketing_span  text-sm  font-bold">15 Mar <span
+                                    style="background-color: #143F64; display: inline-block; width: 8px; height: 8px; border-radius: 50%;"></span>
+                                Scraping</span>
+                            <span class="transfrom_text_span marketing_span xl:text-xl text-xl font-bold">The Future
+                                of Web Data</span>
+                        </div>
+                        <div>
+                            <span style="color: #323C46" class="before_you_choose_span">
+                                Before you choose a domain name, check to see that it isn’t already trademarked by
+                                another firm that holds the copyright.
+                            </span>
+                        </div>
+                    </div>
+                       <div class="flex items-center  xl:gap-2">
+                            <div class="flex items-center justify-between gap-4">
+                                <span><img src="./public/likes/image 2.png" alt=""></span>
+                                <span class="text-sm" style="color: #7086A4">25.2k</span>
+                            </div>
+                             <div class="flex items-center justify-between gap-4">
+                                <span><img src="./public/likes/image 3.png" alt=""></span>
+                                <span class="text-sm" style="color: #7086A4">9.2k</span>
+                            </div>
+                            <div class="flex items-center justify-between gap-4">
+                                <span><img src="./public/likes/image 223.png" alt=""></span>
+                                <span class="text-sm" style="color: #7086A4">9.2k</span>
+                            </div>
+                        </div>
+                </div>
+                <div class="flex flex-col gap-3">
+                    <img src="./public/inspired/Mask group (5).png" alt="">
+                    <div class="flex flex-col gap-4">
+                        <div class="flex flex-col gap-2">
+                            <span class="marketing_span  text-sm  font-bold">15 Mar <span
+                                    style="background-color: #143F64; display: inline-block; width: 8px; height: 8px; border-radius: 50%;"></span>
+                                Marketing</span>
+                            <span class="transfrom_text_span marketing_span xl:text-xl text-xl font-bold">Transform
+                                How to Gather Data </span>
+                        </div>
+                        <div>
+                            <span style="color: #323C46" class="before_you_choose_span">
+                                Before you choose a domain name, check to see that it isn’t already trademarked by
+                                another firm that holds the copyright.
+                            </span>
+                        </div>
+                    </div>
+                       <div class="flex items-center  xl:gap-2">
+                            <div class="flex items-center justify-between gap-4">
+                                <span><img src="./public/likes/image 2.png" alt=""></span>
+                                <span class="text-sm" style="color: #7086A4">25.2k</span>
+                            </div>
+                             <div class="flex items-center justify-between gap-4">
+                                <span><img src="./public/likes/image 3.png" alt=""></span>
+                                <span class="text-sm" style="color: #7086A4">9.2k</span>
+                            </div>
+                            <div class="flex items-center justify-between gap-4">
+                                <span><img src="./public/likes/image 223.png" alt=""></span>
+                                <span class="text-sm" style="color: #7086A4">9.2k</span>
+                            </div>
+                        </div>
                 </div>
 
             </div>
         </div>
         </div>
     </section>
-    <section class="section11 section9 gap-14   items-end flex-col flex xl:pt-6 xl:pb-14  lg:pb-46 md:pb-14 pb-8 pr-24">
-        <span
-            class="view_more_blogs w-48 p-3 hover:bg-blue-900 cursor-pointer flex items-center justify-center rounded-lg text-white">
-            view more blogs
-        </span>
-    </section>
-  <footer style="background-image: url(./public/footer/Group\ 180.png);"
+   <footer style="background-image: url(./public/footer/Group\ 180.png);"
         class="footer section3 1 xl:flex-row xl:gap-0 lg:gap-0 gap-4 lg:flex-row justify-center items-center flex-col flex xl:pt-16 xl:pb-24 lg:pb-16 md:pb-14 pb-8 xl:p-16 lg:p-14 p-8">
-        <div class="footer_wrapper flex gap-8 flex-col">
+        <div class="footer_wrapper flex gap-8  flex-col">
             <div>
                 <img src="./public/footer/Group 1000006208.png" alt="">
             </div>
             <div
-                class="flex xl:gap-8  xl:flex-row lg:flex-row md:flex-row flex-col lg:gap-5 gap-4 text-white items-center justify-between">
+                class="flex xl:gap-8  xl:flex-row lg:flex-row md:flex-row flex-col lg:gap-5 gap-4 text-white items-start justify-between">
                 <div class="flex-1 flex items-center justify-center gap-4 flex-col">
                     <span>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
                         been the industry's standard dummy text ever since the 1500s, when an unknown printer took a
@@ -234,15 +435,16 @@
                 <div class="flex-1 flex items-center justify-center gap-4 flex-col">
                     <span>Follow</span>
                     <ul class="flex gap-3">
-                        <li class="cursor-pointer hover:text-gray-300"><img src="./public/footer/Vector.png" alt=""></li>
-                        <li class="cursor-pointer hover:text-gray-300"><img src="./public/footer/Vector (1).png" alt=""></li>
-                        <li class="cursor-pointer hover:text-gray-300"><img src="./public/footer/Vector (2).png" alt=""></li>
-                        <li class="cursor-pointer hover:text-gray-300"><img src="./public/footer/Vector (3).png" alt=""></li>
+                        <li class="cursor-pointer hover:text-gray-300"><img src="./public/footer/Vector.png" alt="">
+                        </li>
+                        <li class="cursor-pointer hover:text-gray-300"><img src="./public/footer/Vector (1).png" alt="">
+                        </li>
+                        <li class="cursor-pointer hover:text-gray-300"><img src="./public/footer/Vector (2).png" alt="">
+                        </li>
+                        <li class="cursor-pointer hover:text-gray-300"><img src="./public/footer/Vector (3).png" alt="">
+                        </li>
                     </ul>
                 </div>
-            </div>
-            <div>
-
             </div>
         </div>
         <button id="scrollButton"
@@ -251,6 +453,15 @@
         </button>
 
     </footer>
+    <div style="background-color: #143F64;"
+        class="footer section3 text-white 1 xl:flex-row xl:gap-0 lg:gap-0 xl:pl-16 xl:pr-16 pl-4 pr-4 p-2 gap-4 lg:flex-row justify-between items-center flex-col flex  ">
+        <div>
+            <span>Copyright © 2023 WSaaS. All Rights Reserved.</span>
+        </div>
+        <div>
+            <span>Design:</span>
+        </div>
+    </div>
     <script src="./script.js"></script>
 </body>
 

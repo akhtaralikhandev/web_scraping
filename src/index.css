@@ -1,3 +1,6 @@
+body {
+  font-family: "Red Hat Display", sans-serif;
+}
 .nav {
   display: flex;
   justify-content: space-between;
@@ -13,7 +16,7 @@
 }
 .nav-links {
   display: flex;
-  justify-content: space-around;
+
   width: 50%;
 }
 .nav-links li {
@@ -167,10 +170,10 @@
   background-color: #2b5b84;
 }
 .web_scraping {
-  color: #ffb400;
+  color: #ffc815;
 }
 .talk_to_expert {
-  background-color: #ffb400;
+  background-color: #ffc815;
 }
 .section1RightYoutubevideo {
   width: 560px;
@@ -187,13 +190,14 @@
 /* section 2 */
 .extract_data_span {
   color: #2b5b84;
+  /* font-family:'Red Hat Display' */
 }
 .as_a_leading_span {
   color: #323c46;
 }
-.button_contact_us {
+/* .button_contact_us {
   background-color: #ffc815;
-}
+} */
 .advanced_span {
   color: #2b5b84;
 }
@@ -319,4 +323,53 @@
   display: inline-block;
   opacity: 0;
   animation: showLetter 0.8s ease-in-out forwards;
+}
+@font-face {
+  font-family: "Red Hat Display";
+  src: url("public/R0ed_Hat_Display (1)/RedHatDisplay-VariableFont_wght.ttf")
+      format("woff2"),
+    /* Modern Browsers */ url("path/to/font-file.woff") format("woff"); /* Legacy Browsers */
+}
+/* .slideshow {
+  display: flex;
+  overflow: hidden;
+  width: 100%;
+}
+
+.slide {
+  flex: 0 0 100%;  Make each slide take full width 
+  opacity: 0;  Hide slides by default 
+  transition: opacity 0.5s ease-in-out;
+} */
+.navbar_line {
+  width: 100%;
+  height: 2px;
+  background-color: #fbd148;
+  /* background-color: red; */
+}
+.section2_left {
+  flex: 3;
+}
+.section2_right {
+  flex: 2;
+}
+.blogs_button {
+  color: #143f64;
+}
+.blogs_button:hover {
+  background-color: #143f64;
+  color: white;
+}
+.active_blog {
+  background-color: #143f64;
+  color: white;
+}
+.line_web_scrapping {
+  height: 2087px;
+}
+.left_side_web {
+  flex: 3;
+}
+.right_side_web {
+  flex: 1;
 }

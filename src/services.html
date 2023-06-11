@@ -10,21 +10,28 @@
     <link rel="stylesheet" href="./index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
     <link rel="stylesheet" href="./services.css">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+
 </head>
 
 <body>
-    <nav id="navbar" class="p-4 pl-14 md:text-xl md:pr-14 nav">
-        <a href="index.html">
-            <div class="logo xl:pl-14 lg:pl-14 pl-4 cursor-pointer md:text-3xl font-bold">
+     <nav id="navbar" class="p-4 flex justify-between  xl:pr-14 lg:pr-32 lg:pl-14 md:text-xl md:pr-14 nav">
+        <a style="flex-grow: 5;" href="index.html" class=" xl:pl-20">
+            <div class="logo d cursor-pointer md:text-3xl font-bold">
                 <img class="xl:h-14 h-12" src="./public/footer/Group 1000006208.png" alt="">
             </div>
         </a>
-        <ul class="nav-links flex items-center">
-            <li><a href="whyus.html">Why us?<i class="fa fa-caret-down" aria-hidden="true"></i></a></li>
-            <li><a href="services.html">Services<i class="fa fa-caret-down" aria-hidden="true"></i></a></li>
-            <li><a href="company.html">Company<i class="fa fa-caret-down" aria-hidden="true"></i></a></li>
-            <li><a href="blog.html">Blog<i class="fa fa-caret-down" aria-hidden="true"></i></a></li>
-            <li class="xl:p-2 lg:p-2 talk-to_expert rounded-lg flex items-center  "><a href="contactus.html">Talk to an
+        <ul style="flex-grow: 4;" class="nav-links flex  gap-8  items-center justify-end  xl:pr-20 ">
+            <li class="flex gap-8"><a href="whyus.html"><span>Why us?</span>
+                    <i class="fa fa-caret-down" aria-hidden="true"></i></a></li>
+            <li class="flex gap-8"> <a href="services.html"><span> Services</span> <i class="fa fa-caret-down"
+                        aria-hidden="true"></i></a></li>
+            <li class="flex gap-8"><a href="company.html"><span> Company</span> <i class="fa fa-caret-down"
+                        aria-hidden="true"></i></a></li>
+            <li class="flex gap-8"><a href="blog.html"><span>Blog </span>
+            <li style="background-color:#FFB400; font-family: Poppins; color:#143F64"
+                class="xl:p-3 shadow-lg lg:p-3 talk-to_expert  hover:bg-yellow-500 flex items-center font-bold "><a
+                    class="xl:p-2 lg:p-2 p-1  shadow-lg" href="contactus.html">Talk to an
                     Expert</a>
             </li>
         </ul>
@@ -36,170 +43,195 @@
 
         </div>
     </nav>
-    <section
-        class="section11 section9 p-2 gap-14   items-start flex-col flex xl:pt-6 xl:p-24  lg:pb-46 md:pb-14 pb-8 pr-24">
-        <div class="section_wrapper flex gap-6 xl:gap-14 flex-col">
-            <span class="xl:text-3xl font-bold lg:text-2xl text-xl" style="color:#143F64">We Can <span
-                    style="color:#FFB400">Scrape</span> Any Website Available Over the Internet .</span>
-            <div class="s space-y-3" style="color:#323C46">
-                We can scrap various types of websites, including static and dynamic sites, captcha-protected and login
-                protected websites, AJAX-driven sites that load content dynamically, websites with infinite scrolling,
-                and API-driven websites. We can also scrape or mine the hidden data. By applying advanced scraping
-                techniques and analysis, it is possible to extract and mine this hidden data, enabling deeper insights
-                and valuable discoveries from the web.
-            </div>
-        </div>
-    </section>
-    <section
-        class=" gap-14  items-center flex-col flex xl:pl-32 xl:pr-32 xl:pt-6 xl:p-24  lg:pb-46 md:pb-14 pb-8 pr-24">
-        <div class="flex flex-wrap justify-center xl:justify-between items-center w-full">
-            <div class="flex w-56 flex-col gap-3 items-center justify-center">
-                <img class="h-32 w-32" src="./public/services_scrap/image 1.png" alt="">
-                <span style="color:#143F64" class="text-2xl font-bold">Static Website</span>
-                <span>Scrape website with static content</span>
-            </div>
-            <div class="flex w-56 flex-col gap-3 items-center justify-center">
-                <img class="h-32 w-32" src="./public/services_scrap/image 8.png" alt="">
-                <span style="color:#143F64" class="text-2xl font-bold">Dynamic Website</span>
-                <span>Scrape website with static content</span>
-            </div>
-            <div class="flex w-56 flex-col gap-3 items-center justify-center">
-                <img class="h-32 w-32" src="./public/services_scrap/image 7.png" alt="">
-                <span style="color:#143F64" class="text-2xl font-bold">AJAX-Driven</span>
-                <span>Analyzing API endpoints ot network
-                    traffic to extract the desired data</span>
-            </div>
-        </div>
-        <div class="flex flex-wrap justify-center xl:justify-between items-center w-full">
-            <div class="flex w-56 flex-col gap-3 items-center justify-center">
-                <img class="h-32 w-32" src="./public/services_scrap/image 4.png" alt="">
-                <span style="color:#143F64" class="text-2xl font-bold">Static Website</span>
-                <span>Scrape website with any type of
-                    Captcha that blocks scraping</span>
-            </div>
-            <div class="flex w-56 flex-col gap-3 items-center justify-center">
-                <img class="h-32 w-32" src="./public/services_scrap/image 5.png" alt="">
-                <span style="color:#143F64" class="text-2xl font-bold">Login-Protected</span>
-                <span>Websites that require user authentication
-                    or login credentials</span>
-            </div>
-            <div class="flex w-56  flex-col gap-3 items-center justify-center">
-                <img class="h-32 w-32" src="./public/services_scrap/image 6.png" alt="">
-                <span style="color:#143F64" class="text-2xl font-bold">API-Driven Websites</span>
-                <span>Websites that provide data through
-                    an API</span>
-            </div>
-        </div>
-    </section>
-    <section style="background-color: #E3F2FF;"
-        class="xl:p-32 p-2 gap-14 justify-start xl:pl-32 xl:pr-32 items-start flex-col flex      pr-24">
-        <span class="xl:text-3xl font-bold  w-full  flex lg:text-2xl text-xl" style="color:#143F64">SCRAP CUSTOM
-            WEBSITE?</span>
-        <span>Create a custom subscription that fits your requirements. We offer you a custom features & subscription
-            for your project. This means we have the capability to develop the unique functionalities and solution for
-            your custom requirements. Feel free to contact us any time any moment.</span>
-        <button style="background-color: #143F64;" class=" text-white p-3 rounded-lg">Contact Us</button>
-    </section>
-    <section class="gap-14  p-2 items-center flex-col flex xl:pl-32 xl:pr-32 xl:pt-6 xl:p-24  lg:pb-46 md:pb-14 pb-8 pr-24">
-        <div class="flex flex-col gap-8">
-            <span style="color:#143F64" class="xl:text-3xl lg:text-2xl text-xl font-bold">What You will get?</span>
-            <span>As soon as the crawler according to your requirements has been made, you may choose any convenient way
-                to deliver your results</span>
-        </div>
-        <div class="relative flex flex-col h-full">
-            <div class="container xl:block lg:block md:block hidden">
-                <div>
-                    <img src="./public/services/Group 1000006203.png" alt="" style="max-width: 100%; height: auto;">
-                    <img class="absolute absolute_div_1 div_1_api " src="./public/services/left/Mask group.png" alt=""
-                        style="max-width: 100%; height: auto;">
-                    <img class="absolute absolute_div_2 div_1_api" src="./public/services/left/Mask group (1).png"
-                        alt="" style="max-width: 100%; height: auto;">
-                    <img class="absolute absolute_div_3 div_1_api" src="./public/services/left/Mask group (2).png"
-                        alt="" style="max-width: 100%; height: auto;">
-                    <img class="absolute absolute_div_4 div_1_api" src="./public/services/left/Mask group (3).png"
-                        alt="" style="max-width: 100%; height: auto;">
+    <div class="w-1 h-1 navbar_line">
+        <section
+            class="section11 section9 p-2 gap-14   items-start flex-col flex xl:pt-8 xl:p-24  lg:pb-46 md:pb-14 pb-8 pr-24">
+            <div class="section_wrapper flex gap-6 xl:gap-14 flex-col">
+                <span class="xl:text-5xl font-bold lg:text-2xl text-xl" style="color:#143F64">We Can <span
+                        style="color:#FFB400">Scrape</span> Any Website Available Over the Internet .</span>
+                <div class="gap-1 flex flex-col font-light" style="color:#323C46; font-size: 20px;">
+                    <span>We can scrap various types of websites, including static and dynamic sites, captcha-protected
+                        and login protected </span>
+                    <span>websites, AJAX-driven sites that load content dynamically, websites with infinite scrolling,
+                        and API-driven websites. We </span>
+                    <span>can also scrape or mine the hidden data. By applying advanced scraping techniques and
+                        analysis, it is possible to extract</span>
+                    <span>and mine this hidden data, enabling deeper insights and valuable discoveries from the
+                        web</span>
                 </div>
-                <div>
-                    <img class="absolute absolute_div_5 div_1_api" src="./public/services/right/image 204.png" alt=""
-                        style="max-width: 100%; height: auto;">
-                    <img class="absolute absolute_div_6 div_1_api" src="./public/services/right/image 206.png" alt=""
-                        style="max-width: 100%; height: auto;">
-                    <img class="absolute absolute_div_7 div_1_api" src="./public/services/right/image 207.png" alt=""
-                        style="max-width: 100%; height: auto;">
-                    <img class="absolute absolute_div_8 div_1_api" src="./public/services/right/image 208.png" alt=""
-                        style="max-width: 100%; height: auto;">
+            </div>
+        </section>
+        <section
+            class=" gap-14  items-center flex-col flex xl:pl-20 xl:pr-20 xl:pt-6 xl:p-24  lg:pb-46 md:pb-14 pb-8 pr-24">
+            <div class="flex flex-wrap justify-center xl:justify-between items-center w-full">
+                <div class="flex w-64 flex-col gap-3 items-center justify-center">
+                    <img  src="./public/services_scrap/scrap2/Group 1000006291.png" alt="">
+                    <span style="color:#143F64" class="text-2xl font-black">Static Website</span>
+                    <span style="color:#323C46" class="text-sm">Scrape website with static content</span>
+                </div>
+                <div class="flex w-64 flex-col gap-3 items-center justify-center">
+                   <img  src="./public/services_scrap/scrap2/Group 1000006292.png" alt="">
+                    <span style="color:#143F64" class="text-2xl font-black">Dynamic Website</span>
+                    <span style="color:#323C46" class="text-sm">Scrape websites with dynamic content</span>
+                </div>
+                <div class="flex w-64 flex-col gap-3 items-center justify-center">
+                  <img  src="./public/services_scrap/scrap2/Group 1000006293.png" alt="">
+                    <span style="color:#143F64" class="text-2xl font-black">AJAX-Driven</span>
+                    <div style="color:#323C46" class="text-sm flex flex-col items-center justify-center">
+                        <span>Analyzing API endpoints ot network </span>
+                        <span>traffic to extract the desired data</span>
+                    </div>
+                </div>
+            </div>
+            <div class="flex flex-wrap justify-center xl:justify-between items-center w-full">
+                <div class="flex w-64 flex-col gap-3 items-center justify-center">
+                   <img  src="./public/services_scrap/scrap2/Group 1000006296.png" alt="">
+                    <span style="color:#143F64" class="text-2xl font-black">Captcha Protected</span>
+                    <div style="color:#323C46" class="flex flex-col items-center text-sm justify-center">
+                        <span>Scrape website with any type of </span>
+                        <span>Captcha that blocks scraping</span>
+                    </div>
+                </div>
+                <div class="flex w-64 flex-col gap-3 items-center justify-center">
+                 <img  src="./public/services_scrap/scrap2/Group 1000006295.png" alt="">
+                    <span style="color:#143F64" class="text-2xl font-black">Login-Protected</span>
+                    <div style="color:#323C46" class="flex flex-col items-center text-sm justify-center">
+                        <span>Websites that require user authentication </span>
+                        <span> or login credentials</span>
+                    </div>
+                </div>
+                <div class="flex w-72  flex-col gap-3 items-center justify-center">
+                 
+                  <img  src="./public/services_scrap/scrap2/Group 1000006294.png" alt="">
+                    <span style="color:#143F64" class="text-2xl font-black">API-Driven Websites</span>
+                    <div style="color:#323C46" class="flex flex-col items-center text-sm justify-center">
+                        <span>Websites that provide data through </span>
+                        <span> an API</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section style="background-color: #E3F2FF;"
+            class="xl:pt-16 xl:pb-16 gap-14 justify-start xl:pl-24 xl:pr-24 items-start flex-col flex      pr-24">
+            <span class="xl:text-5xl font-bold  w-full  flex lg:text-2xl text-xl" style="color:#143F64">SCRAP CUSTOM
+                WEBSITE?</span>
+
+            <div class="flex flex-col">
+                <span>Create a custom subscription that fits your requirements. We offer you a custom features &
+                    subscription for your </span>
+                <span>project. This means we have the capability to develop the unique functionalities and solution for
+                    your custom </span>
+                <span>requirements. Feel free to contact us any time any moment.</span>
+            </div>
+
+
+            <div class="flex items-center justify-center w-full">
+                <button style="background-color: #143F64; color: #E3F2FF;"
+                    class=" text-white p-3 xl:pl-8 xl:pr-8 shadow-xl">CONTACT US</button>
+            </div>
+
+        </section>
+        <section class="gap-14  p-2  xl:pl-24 xl:pr-24  xl:pt-24    pr-24">
+            <div class="flex flex-col gap-8">
+                <span style="color:#143F64" class="xl:text-5xl lg:text-2xl text-xl font-black">What You will get?</span>
+                <div class="text-sm font-light flex flex-col">
+                    <span>As soon as the crawler according to your requirements has been made, you may choose any
+                    </span>
+                    <span>convenient way to deliver your results</span>
+                </div>
+            </div>
+            <div style="font-family: 'Poppins';" class="relative  flex items-center justify-between ">
+                <div class="container flex-1  xl:block lg:block md:block ">
+                    <div class="flex flex-col gap-4 mt-24 items-center justify-center">
+                        <div class="flex gap-2 items-center justify-center">
+                            <div>
+                                <span>
+                                    <img class="w-24 h-24" src="./public/services2/Group 1000006280.png" alt="">
+                                </span>
+                            </div>
+                            <div class="flex flex-col text-xl font-black gap-2 ">
+                                <span class="text-xl font-black">Restful Api</span>
+                                <div class="flex flex-col">
+                                    <span class="text-sm font-light">Lorem ipsum dolor sit.</span>
+                                    <span class="text-sm font-light">Lorem, ipsum dolor.</span>
+                                    <span class="text-sm font-light">Lorem ipsum dolor sit.</span>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="flex gap-2 items-center justify-center">
+                            <div>
+                                <span>
+                                    <img class="w-24 h-24" src="./public/services2/Group 1000006281.png" alt="">
+                                </span>
+                            </div>
+                            <div class="flex flex-col text-xl font-black gap-2 ">
+                                <span class="text-xl font-black">FTP/SFTP</span>
+                                <div class="flex flex-col">
+                                    <span class="text-sm font-light">Lorem ipsum dolor sit.</span>
+                                    <span class="text-sm font-light">Lorem, ipsum dolor.</span>
+                                    <span class="text-sm font-light">Lorem ipsum dolor sit.</span>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="flex gap-2 items-center justify-center">
+                            <div>
+                                <span>
+                                    <img class="w-24 h-24" src="./public/services2/Group 1000006282.png" alt="">
+                                </span>
+                            </div>
+                            <div class="flex flex-col text-xl font-black gap-2 ">
+                                <span class="text-xl font-black">Amazon S3</span>
+                                <div class="flex flex-col">
+                                    <span class="text-sm font-light">Lorem ipsum dolor sit.</span>
+                                    <span class="text-sm font-light">Lorem, ipsum dolor.</span>
+                                    <span class="text-sm font-light">Lorem ipsum dolor sit.</span>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="flex gap-2 items-center justify-center">
+                            <div>
+                                <span>
+                                    <img class="w-24 h-24" src="./public/services2/Group 1000006283.png" alt="">
+                                </span>
+                            </div>
+                            <div class="flex flex-col text-xl font-black gap-2 ">
+                                <span class="text-xl font-black">Dropbox</span>
+                                <div class="flex flex-col">
+                                    <span class="text-sm font-light">Lorem ipsum dolor sit.</span>
+                                    <span class="text-sm font-light">Lorem, ipsum dolor.</span>
+                                    <span class="text-sm font-light">Lorem ipsum dolor sit.</span>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex-1 flex items-center justify-center xl:pt-16">
+                    <img class="h-96 w-auto" src="./public/services2/Group 1000006279.png" alt="">
                 </div>
             </div>
 
-            <div>
-                <img class="absolute absolute_div_5 div_1_api" src="./public/services/right/image 204.png" alt=""
-                    style="max-width: 100%; height: auto;">
-                <img class="absolute absolute_div_6 div_1_api" src="./public/services/right/image 206.png" alt=""
-                    style="max-width: 100%; height: auto;">
-                <img class="absolute absolute_div_7 div_1_api" src="./public/services/right/image 207.png" alt=""
-                    style="max-width: 100%; height: auto;">
-                <img class="absolute absolute_div_8 div_1_api" src="./public/services/right/image 208.png" alt=""
-                    style="max-width: 100%; height: auto;">
-            </div>
-
+        </section>
+        <div>
+            <img src="./public/services2/Vector 27.png" alt="">
         </div>
-
-    </section>
-
-    <section
-        class="gap-14 p-2 relative items-center flex-col flex xl:pl-32 xl:pr-32 xl:pt-6 xl:p-24  lg:pb-46 md:pb-14 pb-8 pr-24">
-        <div class="section_wrapper  flex-col gap-10 flex items-center justify-center">
-            <span class="xl:text-3xl lg:text-2xl text-xl text-black font-bold">Everything you need from a web scraping
-                solution</span>
-            <div class="relative">
-                <img src="./public/services/bottom/Group 1000006215.png" alt="" style="max-width: 100%; height: auto;">
-                <img class="img_absolute_1" src="./public/services/bottom/image 235.png" alt=""
-                    style="max-width: 100%; height: auto;">
-                <img class="img_absolute_2" src="./public/services/bottom/image 236.png" alt=""
-                    style="max-width: 100%; height: auto;">
-                <img class="img_absolute_3" src="./public/services/bottom/image 237.png" alt=""
-                    style="max-width: 100%; height: auto;">
-                <img class="img_absolute_4" src="./public/services/bottom/image 238.png" alt=""
-                    style="max-width: 100%; height: auto;">
-                <span class="w-full items-center justify-center flex xl:text-2xl text-xl text-black">Monitoring
-                    Dashboard</span>
+        <section class="gap-14  p-2 xl:pt-24 xl:pl-24 xl:pr-24 xl:pb-24  pr-24">
+            <div class="flex items-center justify-center xl:pb-16 w-full">
+                <span class="xl:text-4xl font-medium">Everything you need from a web scraping solution</span>
             </div>
-            <div>
-                <img src="./public/services/bottom/Group 1000006216.png" alt="" style="max-width: 100%; height: auto;">
-            </div>
-            <div class="flex xl:gap-24">
-                <span>Development</span>
-                <span>Production</span>
-                <span>Delivery</span>
-            </div>
-            <div class="flex gap-10">
-                <div class="shadow-lg p-5 rounded-lg">
-                    <img src="./public/services/bottom/image 213 (1).png" alt="" style="max-width: 100%; height: auto;">
-                </div>
-                <div class="shadow-lg p-5 rounded-lg">
-                    <img src="./public/services/bottom/image 214 (1).png" alt="" style="max-width: 100%; height: auto;">
-                </div>
-                <div class="shadow-lg p-5 rounded-lg">
-                    <img src="./public/services/bottom/image 215.png" alt="" style="max-width: 100%; height: auto;">
-                </div>
-                <div class="shadow-lg p-5 rounded-lg">
-                    <img src="./public/services/bottom/image 216.png" alt="" style="max-width: 100%; height: auto;">
-                </div>
-                <div class="shadow-lg p-5 rounded-lg">
-                    <img src="./public/services/bottom/image 217.png" alt="" style="max-width: 100%; height: auto;">
-                </div>
-            </div>
-        </div>
-    </section>
-
-  <footer style="background-image: url(./public/footer/Group\ 180.png);"
+            <img src="./public/services2/Group 1000006287.png" alt="">
+        </section>
+       <footer style="background-image: url(./public/footer/Group\ 180.png);"
         class="footer section3 1 xl:flex-row xl:gap-0 lg:gap-0 gap-4 lg:flex-row justify-center items-center flex-col flex xl:pt-16 xl:pb-24 lg:pb-16 md:pb-14 pb-8 xl:p-16 lg:p-14 p-8">
-        <div class="footer_wrapper flex gap-8 flex-col">
+        <div class="footer_wrapper flex gap-8  flex-col">
             <div>
                 <img src="./public/footer/Group 1000006208.png" alt="">
             </div>
             <div
-                class="flex xl:gap-8  xl:flex-row lg:flex-row md:flex-row flex-col lg:gap-5 gap-4 text-white items-center justify-between">
+                class="flex xl:gap-8  xl:flex-row lg:flex-row md:flex-row flex-col lg:gap-5 gap-4 text-white items-start justify-between">
                 <div class="flex-1 flex items-center justify-center gap-4 flex-col">
                     <span>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
                         been the industry's standard dummy text ever since the 1500s, when an unknown printer took a
@@ -235,15 +267,16 @@
                 <div class="flex-1 flex items-center justify-center gap-4 flex-col">
                     <span>Follow</span>
                     <ul class="flex gap-3">
-                        <li class="cursor-pointer hover:text-gray-300"><img src="./public/footer/Vector.png" alt=""></li>
-                        <li class="cursor-pointer hover:text-gray-300"><img src="./public/footer/Vector (1).png" alt=""></li>
-                        <li class="cursor-pointer hover:text-gray-300"><img src="./public/footer/Vector (2).png" alt=""></li>
-                        <li class="cursor-pointer hover:text-gray-300"><img src="./public/footer/Vector (3).png" alt=""></li>
+                        <li class="cursor-pointer hover:text-gray-300"><img src="./public/footer/Vector.png" alt="">
+                        </li>
+                        <li class="cursor-pointer hover:text-gray-300"><img src="./public/footer/Vector (1).png" alt="">
+                        </li>
+                        <li class="cursor-pointer hover:text-gray-300"><img src="./public/footer/Vector (2).png" alt="">
+                        </li>
+                        <li class="cursor-pointer hover:text-gray-300"><img src="./public/footer/Vector (3).png" alt="">
+                        </li>
                     </ul>
                 </div>
-            </div>
-            <div>
-
             </div>
         </div>
         <button id="scrollButton"
@@ -252,7 +285,16 @@
         </button>
 
     </footer>
-    <script src="./script.js"></script>
+    <div style="background-color: #143F64;"
+        class="footer section3 text-white 1 xl:flex-row xl:gap-0 lg:gap-0 xl:pl-16 xl:pr-16 pl-4 pr-4 p-2 gap-4 lg:flex-row justify-between items-center flex-col flex  ">
+        <div>
+            <span>Copyright © 2023 WSaaS. All Rights Reserved.</span>
+        </div>
+        <div>
+            <span>Design:</span>
+        </div>
+    </div>
+        <script src="./script.js"></script>
 </body>
 
 </html>

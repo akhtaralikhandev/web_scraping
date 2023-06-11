@@ -8,23 +8,29 @@
     <title>Contact Us</title>
     <link rel="stylesheet" href="../dist/output.css" />
     <link rel="stylesheet" href="./index.css">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
 </head>
 
 <body>
     <!-- navbar -->
-    <nav id="navbar" class="p-4 pl-14 md:text-xl md:pr-14 nav">
-        <a href="index.html">
-            <div class="logo xl:pl-14 lg:pl-14 pl-4 cursor-pointer md:text-3xl font-bold">
+     <nav id="navbar" class="p-4 flex justify-between  xl:pr-14 lg:pr-32 lg:pl-14 md:text-xl md:pr-14 nav">
+        <a style="flex-grow: 5;" href="index.html" class=" xl:pl-20">
+            <div class="logo d cursor-pointer md:text-3xl font-bold">
                 <img class="xl:h-14 h-12" src="./public/footer/Group 1000006208.png" alt="">
             </div>
         </a>
-        <ul class="nav-links flex items-center">
-            <li><a href="whyus.html">Why us?<i class="fa fa-caret-down" aria-hidden="true"></i></a></li>
-            <li><a href="services.html">Services<i class="fa fa-caret-down" aria-hidden="true"></i></a></li>
-            <li><a href="company.html">Company<i class="fa fa-caret-down" aria-hidden="true"></i></a></li>
-            <li><a href="blog.html">Blog<i class="fa fa-caret-down" aria-hidden="true"></i></a></li>
-            <li class="xl:p-2 lg:p-2 talk-to_expert rounded-lg flex items-center  "><a href="contactus.html">Talk to an
+        <ul style="flex-grow: 4;" class="nav-links flex  gap-8  items-center justify-end  xl:pr-20 ">
+            <li class="flex gap-8"><a href="whyus.html"><span>Why us?</span>
+                    <i class="fa fa-caret-down" aria-hidden="true"></i></a></li>
+            <li class="flex gap-8"> <a href="services.html"><span> Services</span> <i class="fa fa-caret-down"
+                        aria-hidden="true"></i></a></li>
+            <li class="flex gap-8"><a href="company.html"><span> Company</span> <i class="fa fa-caret-down"
+                        aria-hidden="true"></i></a></li>
+            <li class="flex gap-8"><a href="blog.html"><span>Blog </span>
+            <li style="background-color:#FFB400; font-family: Poppins; color:#143F64"
+                class="xl:p-3 shadow-lg lg:p-3 talk-to_expert  hover:bg-yellow-500 flex items-center font-bold "><a
+                    class="xl:p-2 lg:p-2 p-1  shadow-lg" href="contactus.html">Talk to an
                     Expert</a>
             </li>
         </ul>
@@ -36,71 +42,91 @@
 
         </div>
     </nav>
-    <section
-        class="section11 section9 gap-14   items-start flex-col flex xl:pt-6 xl:p-24  lg:pb-46 md:pb-14 pb-8 pr-24">
-        <div class="section_wrapper flex gap-6 xl:gap-14 flex-col">
-            <span class="xl:text-3xl font-bold lg:text-2xl text-xl" style="color:#143F64">Get a <span
-                    style="color:#FFB400">Demo</span> for your actual use case .</span>
-            <div class="s space-y-3" style="color:#323C46">
-                Web scraping, data extraction, and web automation are our areas of expertise. We give complete
-                end-to-end automation solutions. Our area of expertise is using data to generate improvements in your
-                operations, sales, and marketing initiatives. Whether you want to improve customer experiences,
-                streamline processes, or extract insightful data, our team of specialists is here to help. Fill out the
-                form to get in touch with us right away, and one of our committed specialists will get back to you to
-                discuss how our data-driven solutions can create new opportunities for your company.
+    <div class="w-1 h-1 navbar_line">
+    <div class="w-1 h-1 navbar_line">
+        <section
+            class="section11 section9 gap-14   items-start flex-col flex xl:pt-10 xl:p-24  lg:pb-46 md:pb-14 pb-8 pr-24">
+            <div class="section_wrapper flex gap-6 xl:gap-14 flex-col">
+                <span class="xl:text-5xl font-black lg:text-2xl text-xl" style="color:#143F64">Get a <span
+                        style="color:#FFB400">Demo</span> for your actual use case </span>
+                <div class="flex flex-col gap-2 font-light" style="color:#323C46">
+                    <span>Web scraping, data extraction, and web automation are our areas of expertise. We give complete
+                        end-to-end </span>
+                    <span>automation solutions. Our area of expertise is using data to generate improvements in your
+                        operations, sales, and </span>
+                    <span>marketing initiatives. Whether you want to improve customer experiences, streamline processes,
+                        or extract insightful </span>
+                    <span>data, our team of specialists is here to help. Fill out the form to get in touch with us right
+                        away, and one of our </span>
+                    <span>committed specialists will get back to you to discuss how our data-driven solutions can create
+                        new opportunities </span>
+                    <span>for your company.</span>
+                </div>
             </div>
-        </div>
-    </section>
-    <section
-        class="section11 section9 gap-14   items-start flex-col flex xl:pt-6 xl:p-24  lg:pb-14 md:pb-14 pb-8 pr-24">
-        <span class="xl:text-3xl font-bold lg:text-2xl text-xl" style="color:#143F64">Book a <span
-                style="color:#FFB400">Meeting</span></span>
-    </section>
-    <form class="lg:p-24 flex-col gap-6 xl:p-24 w-full flex justify-center items-start" action=""
-        style="background-color: #E3F2FF;">
-        <div class="flex xl:gap-12 gap-4 ">
-            <div class="flex flex-col ">
-                <label for="">First Name:</label>
-                <input class="p-2 outline-blue-600 border xl:w-72 border-black rounded-lg" type="text">
-            </div>
-            <div class="flex flex-col ">
-                <label for="">Last Name:</label>
-                <input class="p-2 outline-blue-600 border xl:w-72 border-black rounded-lg">
-            </div>
-        </div>
-        <div class="flex flex-col ">
-            <label for="">Your work Eamil:</label>
-            <input class="p-2 outline-blue-600 border xl:w-96 border-black rounded-lg">
-        </div>
-        <div class="flex xl:gap-12 gap-4 ">
-            <div class="flex flex-col ">
-                <label for="">Company Name:</label>
-                <input class="p-2 outline-blue-600 border xl:w-72 border-black rounded-lg" type="text">
-            </div>
-            <div class="flex flex-col ">
-                <label for="">Company Size:</label>
-                <input class="p-2 outline-blue-600 border xl:w-72 border-black rounded-lg">
-            </div>
-        </div>
-        <div class="flex flex-col ">
-            <label for="">How can we assist you?</label>
-            <input class="p-2 outline-blue-600 border xl:w-96 border-black rounded-lg">
-        </div>
-        <div class="flex flex-col w-96">
-            <label for="">What are your goals with US?</label>
-            <input class="p-2 outline-blue-600 border  flex-1 border-black rounded-lg">
-        </div>
-        <button style="background-color: #143F64;"
-            class="xl:w-72 xl:p-3 p-2 rounded-lg text-white hover:bg-slate-500">Request a Demo</button>
-    </form>
-   <footer style="background-image: url(./public/footer/Group\ 180.png);"
+        </section>
+        <section
+            class="section11 section9 gap-14   items-start flex-col flex xl:pt-6 xl:p-24  lg:pb-14 md:pb-14 pb-8 pr-24">
+            <span class="xl:text-5xl font-bold lg:text-2xl text-xl" style="color:#143F64">Book a <span
+                    style="color:#FFB400">Meeting</span></span>
+        </section>
+        <section style="font-family: 'Poppins';" class="xl:p-8 xl:pb-10 xl:pt-10 xl:pl-24 xl:pr-24 ">
+            <form class="lg:p-24 flex-col gap-6 w-full xl:pl-2 xl:pr-2 rounded-xl  flex justify-center items-center"
+                action="" style="background-color: #E3F2FF;">
+                <div class="flex xl:gap-9 w-full gap-3 xl:pl-36 xl:pr-36">
+                    <div class="flex w-full flex-col flex-1 gap-2 ">
+                        <label class="font-medium" style="color: #143F64" for="">First Name:</label>
+                        <input style="border: 1px solid #143F64"
+                            class="p-2 xl:text-xl outline-blue-900 border w-full  rounded-md" type="text">
+                    </div>
+                    <div class="flex flex-col w-full flex-1 gap-2">
+                        <label class="font-medium" style="color: #143F64" for="">Last Name:</label>
+                        <input style="border: 1px solid #143F64"
+                            class="p-2 xl:text-xl outline-blue-900 border w-full  rounded-md" type="text">
+                    </div>
+                </div>
+                <div class="flex flex-col gap-2 w-full xl:pl-36 xl:pr-36 ">
+                    <label class="font-medium" style="color: #143F64" for="">Your work Eamil:</label>
+                    <input style="border: 1px solid #143F64"
+                        class="p-2 xl:text-xl outline-blue-900 border w-full  rounded-md">
+                </div>
+               <div class="flex xl:gap-9 w-full gap-3 xl:pl-36 xl:pr-36">
+                    <div class="flex w-full flex-col flex-1 gap-2 ">
+                        <label class="font-medium" style="color: #143F64" for="">Company Name</label>
+                        <input style="border: 1px solid #143F64"
+                            class="p-2 xl:text-xl outline-blue-900 border w-full  rounded-md" type="text">
+                    </div>
+                    <div class="flex flex-col w-full flex-1 gap-2">
+                        <label class="font-medium" style="color: #143F64" for="">Company Size</label>
+                        <input style="border: 1px solid #143F64"
+                            class="p-2 xl:text-xl outline-blue-900 border w-full  rounded-md" type="text">
+                    </div>
+                </div>
+                <div class="flex flex-col gap-2 w-full xl:pl-36 xl:pr-36 ">
+                    <label class="font-medium" style="color: #143F64" for="">How can we assist you?</label>
+                    <input style="border: 1px solid #143F64"
+                        class="p-2 xl:text-xl outline-blue-900 border w-full  rounded-md">
+                </div>
+                <div class="flex flex-col gap-2 w-full xl:pl-36 xl:pr-36 ">
+                    <label class="font-medium" style="color: #143F64" for="">What are your goals with US?</label>
+                    <input style="border: 1px solid #143F64"
+                        class="p-2 xl:text-xl outline-blue-900 border w-full flex-1  rounded-lg">
+                </div>
+                <div class="flex flex-col gap-2 w-full xl:pl-36 xl:mt-4 xl:pr-36 ">
+                    <button style="background-color: #143F64;"
+                        class="w-full xl:p-3 rounded-lg text-white xl:text-xl hover:bg-slate-500">Request a
+                        Demo</button>
+                </div>
+
+            </form>
+        </section>
+       <footer style="background-image: url(./public/footer/Group\ 180.png);"
         class="footer section3 1 xl:flex-row xl:gap-0 lg:gap-0 gap-4 lg:flex-row justify-center items-center flex-col flex xl:pt-16 xl:pb-24 lg:pb-16 md:pb-14 pb-8 xl:p-16 lg:p-14 p-8">
-        <div class="footer_wrapper flex gap-8 flex-col">
+        <div class="footer_wrapper flex gap-8  flex-col">
             <div>
                 <img src="./public/footer/Group 1000006208.png" alt="">
             </div>
             <div
-                class="flex xl:gap-8  xl:flex-row lg:flex-row md:flex-row flex-col lg:gap-5 gap-4 text-white items-center justify-between">
+                class="flex xl:gap-8  xl:flex-row lg:flex-row md:flex-row flex-col lg:gap-5 gap-4 text-white items-start justify-between">
                 <div class="flex-1 flex items-center justify-center gap-4 flex-col">
                     <span>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
                         been the industry's standard dummy text ever since the 1500s, when an unknown printer took a
@@ -136,15 +162,16 @@
                 <div class="flex-1 flex items-center justify-center gap-4 flex-col">
                     <span>Follow</span>
                     <ul class="flex gap-3">
-                        <li class="cursor-pointer hover:text-gray-300"><img src="./public/footer/Vector.png" alt=""></li>
-                        <li class="cursor-pointer hover:text-gray-300"><img src="./public/footer/Vector (1).png" alt=""></li>
-                        <li class="cursor-pointer hover:text-gray-300"><img src="./public/footer/Vector (2).png" alt=""></li>
-                        <li class="cursor-pointer hover:text-gray-300"><img src="./public/footer/Vector (3).png" alt=""></li>
+                        <li class="cursor-pointer hover:text-gray-300"><img src="./public/footer/Vector.png" alt="">
+                        </li>
+                        <li class="cursor-pointer hover:text-gray-300"><img src="./public/footer/Vector (1).png" alt="">
+                        </li>
+                        <li class="cursor-pointer hover:text-gray-300"><img src="./public/footer/Vector (2).png" alt="">
+                        </li>
+                        <li class="cursor-pointer hover:text-gray-300"><img src="./public/footer/Vector (3).png" alt="">
+                        </li>
                     </ul>
                 </div>
-            </div>
-            <div>
-
             </div>
         </div>
         <button id="scrollButton"
@@ -153,7 +180,16 @@
         </button>
 
     </footer>
-    <script src="./script.js"></script>
+    <div style="background-color: #143F64;"
+        class="footer section3 text-white 1 xl:flex-row xl:gap-0 lg:gap-0 xl:pl-16 xl:pr-16 pl-4 pr-4 p-2 gap-4 lg:flex-row justify-between items-center flex-col flex  ">
+        <div>
+            <span>Copyright © 2023 WSaaS. All Rights Reserved.</span>
+        </div>
+        <div>
+            <span>Design:</span>
+        </div>
+    </div>
+        <script src="./script.js"></script>
 </body>
 
 </html>
