@@ -373,3 +373,12 @@ body {
 .right_side_web {
   flex: 1;
 }
+
+@media only screen and (min-width: 800px) {
+  /* For tablets: */
+  .navbar_button2 {
+    width: 500px;
+    padding: 0;
+    background-color: red;
+  }
+}

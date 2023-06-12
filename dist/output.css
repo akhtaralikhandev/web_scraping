@@ -967,6 +967,10 @@ video {
   padding: 2rem;
 }
 
+.p-5{
+  padding: 1.25rem;
+}
+
 .pb-8{
   padding-bottom: 2rem;
 }
@@ -1152,6 +1156,10 @@ video {
     display: block;
   }
 
+  .lg\:w-full{
+    width: 100%;
+  }
+
   .lg\:flex-row{
     flex-direction: row;
   }
@@ -1246,6 +1254,10 @@ video {
 
   .xl\:h-14{
     height: 3.5rem;
+  }
+
+  .xl\:w-full{
+    width: 100%;
   }
 
   .xl\:flex-row{
