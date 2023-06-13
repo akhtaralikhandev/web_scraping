@@ -72,3 +72,40 @@ window.addEventListener("scroll", () => {
 
 // animation javascript
 // Select the slide container
+const reviews = [
+  {
+    id: 1,
+    img: "",
+    desc: "Scrapulse is a good company in terms of Speed and support.. almost in everything. I really like the servers",
+    more: "more",
+    name: "Matt Willson",
+    date: "Apr 16, 2023",
+    starImg: "",
+  },
+  {
+    id: 2,
+    msg: "",
+    desc: "It is highly recommended after a long research for my startup over web hosting. I found this full features and",
+    more: "more",
+    name: "Jhonson A.",
+    date: "Apr 16, 2023",
+    starImg: "",
+  },
+  {
+    id: 3,
+    msg: "",
+    desc: "Scrapulse is a good company in terms of Speed and support.. almost in everything. I really like the servers",
+    more: "more",
+    name: "Matt Willson",
+    date: "Apr 16, 2023",
+    starImg: "",
+  },
+  {
+    id: 4,
+    msg: "",
+    desc: "Scrapulse is a good company in terms of Speed and support.. almost in everything. I really like the servers",
+    more: "more",
+    name: "Matt Willson",
+    date: "Apr 16, 2023",
+  },
+];

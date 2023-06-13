@@ -50,7 +50,7 @@ body {
   margin: 5px;
   transition: all 0.3s ease;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1100px) {
   .navbar_button {
     display: none;
   }
@@ -380,5 +380,28 @@ body {
     width: 500px;
     padding: 0;
     background-color: red;
+  }
+}
+.small_screen_texts {
+  font-size: 20px;
+}
+@media only screen and (max-width: 600px) {
+  .small_screen_texts {
+    font-size: 6px;
+  }
+  .as_a_leading_small_texts {
+    font-size: 16px;
+  }
+  .text_advanced {
+    font-size: 18px;
+  }
+}
+.our_customers_support {
+  width: 900px;
+}
+@media only screen and (max-width: 640px) {
+  .web_scrabing_card {
+    top: 48%;
+    left: 10%;
   }
 }

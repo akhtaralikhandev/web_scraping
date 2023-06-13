@@ -10,8 +10,9 @@
     <link rel="stylesheet" href="./index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
     <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" />
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" defer></script>
-
+    <link rel="stylesheet" href="./slider.css">
     <style>
         body {
             font-family: "Poppins";
@@ -26,7 +27,7 @@
                 <img class="xl:h-14 h-12" src="./public/footer/Group 1000006208.png" alt="">
             </div>
         </a>
-        <ul style="flex-grow: 4;" class="nav-links flex  gap-8  items-center justify-end  xl:pr-20 ">
+        <ul style="flex-grow: 4;" class="nav-links flex lg:gap-4 gap-4  xl:gap-6  items-center justify-end  xl:pr-20 ">
             <li class="flex gap-8"><a href="whyus.html"><span>Why us?</span>
                     <i class="fa fa-caret-down" aria-hidden="true"></i></a></li>
             <li class="flex gap-8"> <a href="services.html"><span> Services</span> <i class="fa fa-caret-down"
@@ -35,9 +36,13 @@
                         aria-hidden="true"></i></a></li>
             <li class="flex gap-8"><a href="blog.html"><span>Blog </span>
             <li style="background-color:#FFB400; font-family: Poppins; color:#143F64"
-                class="xl:p-3 shadow-lg lg:p-3 p-1 talk-to_expert  hover:bg-yellow-500 flex items-center font-bold "><a
-                    class="xl:p-2  lg:p-2 p-1   shadow-lg" href="contactus.html">Talk to an
+                class="xl:p-3 shadow-lg lg:p-3 p-1   hover:bg-yellow-500 hidden lg:flex md:flex xl:flex items-center font-bold ">
+                <a class="xl:p-2  lg:p-2   shadow-lg" href="contactus.html">Talk to an
                     Expert</a>
+            </li>
+            <li style="background-color:#FFB400; font-family: Poppins; color:#143F64"
+                class="xl:p-3 shadow-lg lg:p-3 p-1 navbar_buttons block lg:hidden md:hidden xl:hidden  hover:bg-yellow-500  items-center font-bold ">
+                <a class="xl:p-2  lg:p-2    shadow-lg" href="contactus.html">contact us</a>
             </li>
         </ul>
         <div class="burger">
@@ -52,8 +57,8 @@
 
     </div>
     <section
-        class="section1 xl:pr-24 xl:pl-24 xl:flex-row lg:flex-row md:flex-row flex-col flex xl:gap-0 lg:gap-0 gap-4    xl:pt-16 xl:pb-24 lg:pb-16 md:pb-14 pb-8 xl:p-16 lg:p-14 p-8">
-        <div class="section1Left flex-1 flex flex-col xl:gap-8 lg:gap-6 gap-4 ">
+        class="section1 xl:pr-24 xl:pl-24 xl:flex-row lg:flex-row  flex-col flex xl:gap-0 lg:gap-0 gap-4    xl:pt-16 xl:pb-24 lg:pb-16 md:pb-14 pb-8 xl:p-16 lg:p-14 p-8">
+        <div style="flex-grow: 2;" class="section1Left  flex flex-col xl:gap-8 lg:gap-6 gap-4 ">
             <!-- <div class="div xl:pr-64">
                 <span style="font-family:poppins;" id="animated-text" class="xl:text-4xl xl:font-bold lg:text-3xl text-2xl text-white ">
                     Empower Your Business with <span class="web_scraping">Web Scraping</span> Excellence.
@@ -61,21 +66,22 @@
             </div> -->
             <div class="flex flex-col gap-4">
                 <span style="font-family:Poppins;" id="animated-text"
-                    class="xl:text-5xl xl:font-extrabold lg:text-3xl font-bold text-3xl  text-white ">Empower Your Business</span>
+                    class="xl:text-5xl xl:font-extrabold lg:text-3xl font-bold text-2xl  text-white ">Empower Your
+                    Business</span>
                 <span style="font-family:Poppins;" id="animated-text"
-                    class="xl:text-5xl xl:font-extrabold lg:text-3xl font-bold text-3xl text-white ">with <span
+                    class="xl:text-5xl xl:font-extrabold lg:text-3xl font-bold text-2xl text-white ">with <span
                         style="color:#FFB400"> Web Scraping</span> </span>
                 <span style="font-family:Poppins;" id="animated-text"
-                    class="xl:text-5xl xl:font-extrabold lg:text-3xl font-bold text-3xl text-white ">Excellence.</span>
+                    class="xl:text-5xl xl:font-extrabold lg:text-3xl font-bold text-2xl text-white ">Excellence.</span>
             </div>
-            <div class="flex flex-col">
-                <span style="font-size: 20px;" class="text-gray-200 font-light">Accelerate Growth with our Data Scraping
+            <div class="flex xl:flex-col lg:flex-col  md:gap-2 gap-0 flex-col small_screen_texts">
+                <span class="text-gray-200 font-light">Accelerate Growth with our Data Scraping
                 </span>
-                <span style="font-size: 20px;" class="text-gray-200 font-light"> Expertise and Data Solutions. </span>
+                <span class="text-gray-200 font-light"> Expertise and Data Solutions. </span>
 
             </div>
-            <div class="xl:pr-32">
-                <span class="xl:text-2xl lg:text-2xl text-xl text-white">
+            <div class="xl:pr-32 xl:w-full lg:w-full md:96 w-full">
+                <span class="xl:text-2xl small_screen_texts lg:text-2xl  text-xl text-white">
                     Transforming the Web into Actionable Intelligence through Data Scraping.
                 </span>
             </div>
@@ -88,47 +94,50 @@
                 <span class="text-white">Trusted by over 152,000 customers in 42 countries.</span>
             </div>
         </div>
-        <div class="section1Right flex-1 flex items-center justify-end">
+        <div style="flex-grow: 1;"
+            class="section1Right  flex items-center xl:justify-end justify-center lg:justify-end">
             <!-- YouTube video embed code goes here -->
             <iframe class="section1RightYoutubevideo" src="https://www.youtube.com/embed/ZC4eWrzxIqw" frameborder="0"
                 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen></iframe>
         </div>
     </section>
-    <section
-        class=" xl:pr-24 xl:pl-24 xl:flex-row  lg:gap-0 gap-4 lg:flex-row justify-between items-center flex-col flex xl:pt-16      p-8">
-        <div
-            class="section2_wrapper items-start xl:gap-4 gap-8  xl:flex-row lg:flex-row justify-between  flex-col flex xl:pt-16 ">
-            <div class="section2_left flex-1 items-start   flex flex-col  xl:gap-6 lg:gap-6 gap-4">
-                <span style="font-family:Poppins"
-                    class="extract_data_span xl:text-4xl lg:text-2xl text-2xl font-extrabold">Extract Data From Any
-                    Websites</span>
-                <div style="color:#323C46" class="flex flex-col gap-4 as_a_leading_span font-light">
-                    <div class="flex flex-col">
-                        <span>As a leading scraping agency we are specializes in extracting static</span>
-                        <span>and dynamic data from websites of any complexity. We will provide</span>
-                        <span>you all the required information of any websites including images,</span>
-                        <span>title, address, rating, price, discounts, links, download files etc.</span>
+    <section class=" xl:pr-24 xl:pl-24   gap-6  justify-between items-center flex-col flex xl:pt-16      p-8">
+        <div class="flex">
+            <div
+                class="section2_wrapper items-start xl:gap-4 gap-8  xl:flex-row lg:flex-row justify-between  flex-col flex xl:pt-16 ">
+                <div class="section2_left flex-1 items-start   flex flex-col  xl:gap-6 lg:gap-6 gap-4">
+                    <span style="font-family:Poppins"
+                        class="extract_data_span xl:text-4xl lg:text-2xl text-2xl font-extrabold">Extract Data From Any
+                        Websites</span>
+                    <div style="color:#323C46" class="flex flex-col gap-4 as_a_leading_span font-light">
+                        <div class="xl:flex lg:flex md:flex block flex-col as_a_leading_small_texts">
+                            <span>As a leading scraping agency we are specializes in extracting static</span>
+                            <span>and dynamic data from websites of any complexity. We will provide</span>
+                            <span>you all the required information of any websites including images,</span>
+                            <span>title, address, rating, price, discounts, links, download files etc.</span>
+                        </div>
+
+                        <div class="xl:flex lg:flex md:flex block  flex-col">
+                            <span>We have a team of professionals that will scrap any website</span>
+                            <span>for you within few hours. We will scrap websites that needs login,</span>
+                            <span>have hidden APIs, Captcha required and all others.</span>
+                        </div>
                     </div>
 
-                    <div class="flex flex-col">
-                        <span>We have a team of professionals that will scrap any website</span>
-                        <span>for you within few hours. We will scrap websites that needs login,</span>
-                        <span>have hidden APIs, Captcha required and all others.</span>
+
+                </div>
+                <div class="section2_right flex-1 flex items-start">
+                    <div class="section2_right_png">
+                        <img src="./public/images/web_scrapping 1.png" alt="">
                     </div>
                 </div>
-                <div class="flex items-center justify-center xl:pt-12 w-full">
-                    <button style="color:#2B5B84; background-color: #FFC815;"
-                        class="button_contact_us p-2 xl:p-3 xl:mr-12 hover:bg-yellow-300 xl:shadow-2xl w-40 font-bold">CONTACT
-                        US</button>
-                </div>
-
             </div>
-            <div class="section2_right flex-1 flex items-start">
-                <div class="section2_right_png">
-                    <img src="./public/images/web_scrapping 1.png" alt="">
-                </div>
-            </div>
+        </div>
+        <div class="flex items-center justify-center xl:pt-12 w-full">
+            <button style="color:#2B5B84; background-color: #FFC815;"
+                class="button_contact_us p-2 xl:p-3 xl:mr-12 hover:bg-yellow-300 xl:shadow-2xl w-40 font-bold">CONTACT
+                US</button>
         </div>
     </section>
 
@@ -140,19 +149,19 @@
                 <div class="section2_right_png">
                     <img class="section2_right_png_image" src="./public/images/image 34.png" alt="">
                 </div>
-                <div class="absolute flex-1 top-48 w-96 -right-8">
+                <div class="absolute flex-1 sm:32 top-48  xl:w-96 lg:w-96 md:w-96 sm:w-96 w-72 -right-2 sm:-right-8">
                     <img src="./public/images/image 35.png" alt="">
                 </div>
             </div>
             <div class="section2_left flex-1 items-end p-4 xl:mt-16 flex flex-col  xl:gap-6 lg:gap-6 gap-4">
-                <div class="flex  w-full xl:pl-10 ">
+                <div class="flex  w-full  items-start justify-start">
                     <span style="font-family:Poppins"
-                        class="extract_data_span xl:text-4xl lg:text-2xl text-2xl font-extrabold">Flexible Data Outputs
+                        class="extract_data_span text-left xl:text-4xl lg:text-2xl text-2xl font-extrabold">Flexible Data Outputs
                     </span>
                 </div>
 
                 <div style="color:#323C46" class="flex flex-col gap-8 xl:pr-24">
-                    <div class="flex flex-col  as_a_leading_span">
+                    <div class="block sm:flex  flex-col  as_a_leading_span">
                         <span>We understand the importance of flexibility in the data </span>
                         <span>utilization. That's why we provide outputs in various</span>
                         <span>formats, including CSV, JSON, Excel, Google sheets, and </span>
@@ -160,7 +169,7 @@
                         <span>analysis, visualization, presentation, and decision-making </span>
                         <span>processes, empowering you to derive meaningful insights.</span>
                     </div>
-                    <div class="flex flex-col  as_a_leading_span">
+                    <div class=" block sm:flex flex-col  as_a_leading_span">
                         <span>Choose our leading scraping agency to benefit from the</span>
                         <span>advantages of efficient data distribution in many forms. Give</span>
                         <span>us a chance to assist you in releasing the full potential of your</span>
@@ -181,20 +190,21 @@
         class="section3 p-8 1 xl:flex-row xl:gap-0 lg:gap-0 gap-4 lg:flex-row justify-center items-center flex-col flex xl:pt-8 xl:pb-24 lg:pb-16 md:pb-14 pb-8 xl:p-16 lg:p-14 pt-16">
         <div class="section_wrapper5 gap-4 flex xl:gap-8 items-center flex-col  justify-center">
             <div class="flex flex-col items-center justify-center gap-2">
-                <span class="xl:text-4xl text-2xl customer_about_scrapulse_span font-bold animation-text">
+                <span class="xl:text-4xl sm:text-3xl text-xl customer_about_scrapulse_span font-bold animation-text">
                     Advanced Web Scraping Features
                 </span>
-                <span class="font-light" style="color:#393F45; font-family: Poppins;">
+                <span class="font-light sm:text-xl w-full text-center text-sm" style="color:#393F45; font-family: Poppins;">
                     Everything you need to automate your web scraping
                 </span>
             </div>
-            <div class="flex xl:gap-8  flex-wrap  items-center justify-center ">
+            <div class="flex xl:gap-8   flex-wrap  items-center justify-center ">
                 <div class="relative">
                     <div class="mt-7 relative">
                         <img src="./public/rounded/Group 1000006265.png" alt="">
-                        <div class="absolute lg:top-40 top-32 xl:top-40 xl:left-20 lg:left-20 md:left-20 left-10 flex flex-col items-center gap-8 justify-center">
-                            <span style="color:#2B5B84" class="xl:text-2xl font-black">Captcha Solving</span>
-                            <div style="color:#393F45" class="flex flex-col font-light items-center justify-center">
+                        <div
+                            class="absolute sm:top-40 top-32  web_scrabing_card sm:left-20 left-7 flex flex-col items-center sm:gap-8 gap-4 justify-center">
+                            <span style="color:#2B5B84" class="text-2xl font-black">Captcha Solving</span>
+                            <div style="color:#393F45" class="flex flex-col text_advanced font-light items-center justify-center">
                                 <span>Effortlessly Scrape Websites </span>
                                 <span>that are Captcha Protected</span>
                             </div>
@@ -204,9 +214,10 @@
                 <div class="relative">
                     <div class="mt-7">
                         <img src="./public/rounded/Group 1000006266.png" alt="">
-                        <div class="absolute lg:top-40 top-36 xl:top-40 xl:left-20 lg:left-20 md:left-20 left-10 flex flex-col items-center gap-8 justify-center">
-                            <span style="color:#2B5B84" class="xl:text-2xl font-black">Bot detection bypass</span>
-                            <div style="color:#393F45" class="flex flex-col font-light items-center justify-center">
+                        <div
+                            class="absolute sm:top-48 top-40 web_scrabing_card sm:left-20 left-2 flex flex-col items-center gap-4 sm:gap-8 justify-center">
+                            <span style="color:#2B5B84" class="text-2xl font-black">Bot detection bypass</span>
+                            <div style="color:#393F45" class="flex text_advanced flex-col font-light items-center justify-center">
                                 <span>Advanced Bot Detection</span>
                                 <span>Bypass. Ensuring Uninterrupted</span>
                                 <span>Web Scraping</span>
@@ -217,9 +228,10 @@
                 <div>
                     <div class="mt-7 relative">
                         <img src="./public/rounded/Group 1000006267.png" alt="">
-                        <div class="absolute lg:top-40 top-32 xl:top-40 xl:left-20 lg:left-20 md:left-20 left-10 flex flex-col items-center gap-8 justify-center">
-                            <span style="color:#2B5B84" class="xl:text-2xl font-black">Large scale scraping </span>
-                            <div style="color:#393F45" class="flex flex-col font-light items-center justify-center">
+                        <div
+                            class="absolute sm:top-40 top-28 web_scrabing_card sm:left-20 left-4 flex flex-col items-center sm:gap-8 gap-4 justify-center">
+                            <span style="color:#2B5B84" class="text-2xl font-black">Large scale scraping </span>
+                            <div style="color:#393F45" class="flex text_advanced flex-col font-light items-center justify-center">
                                 <span>Efficient and Scalable Web </span>
                                 <span>Scraping Solutions for Large-</span>
                                 <span>Scale Data Extraction</span>
@@ -232,11 +244,12 @@
                 <div>
                     <div class="mt-7 relative">
                         <img src="./public/rounded/Group 1000006268.png" alt="">
-                        <div class="absolute lg:top-40 top-32 xl:top-40 xl:left-20 lg:left-20 md:left-20 left-10 flex flex-col items-center gap-8 justify-center">
-                            <span style="color:#2B5B84" class="xl:text-2xl font-black">Cloud Services </span>
-                            <div style="color:#393F45" class="flex flex-col font-light items-center justify-center">
-                                <span>Maximize Efficiency with Cloud- </span>
-                                <span>Based Web Scraping Services</span>
+                        <div
+                            class="absolute sm:top-40 top-28 web_scrabing_card sm:left-20 left-2 flex flex-col items-center sm:gap-8 gap-4 justify-center">
+                            <span style="color:#2B5B84" class="text-2xl font-black">Cloud Services </span>
+                            <div style="color:#393F45" class="flex text_advanced flex-col font-light items-center justify-center">
+                                <span class="text-center">Maximize Efficiency with Cloud- </span>
+                                <span class="text-center">Based Web Scraping Services</span>
                             </div>
                         </div>
                     </div>
@@ -244,9 +257,10 @@
                 <div>
                     <div class="mt-7 relative">
                         <img src="./public/rounded/Group 1000006269.png" alt="">
-                        <div class="absolute lg:top-40 top-32 xl:top-40 xl:left-20 lg:left-20 md:left-20 left-10 flex flex-col items-center gap-8 justify-center">
-                            <span style="color:#2B5B84" class="xl:text-2xl font-black">Schedule Scraping</span>
-                            <div style="color:#393F45" class="flex flex-col font-light items-center justify-center">
+                        <div
+                            class="absolute sm:top-40 web_scrabing_card top-40 sm:left-20 left-12 flex flex-col items-center sm:gap-8 gap-4 justify-center">
+                            <span style="color:#2B5B84" class="text-2xl font-black">Schedule Scraping</span>
+                            <div style="color:#393F45" class="flex text_advanced flex-col font-light items-center justify-center">
                                 <span>Efficiently Schedule Data </span>
                                 <span> Scraping for Timely Results</span>
                             </div>
@@ -256,9 +270,10 @@
                 <div>
                     <div class="mt-7 relative">
                         <img src="./public/rounded/Group 1000006270.png" alt="">
-                        <div class="absolute lg:top-40 top-32 xl:top-40 xl:left-20 lg:left-20 md:left-20 left-10 flex flex-col items-center gap-8 justify-center">
-                            <span style="color:#2B5B84" class="xl:text-2xl font-black">IP Rotation</span>
-                            <div style="color:#393F45" class="flex flex-col font-light items-center justify-center">
+                        <div
+                            class="absolute sm:top-40 web_scrabing_card top-40 sm:left-20 left-12 flex flex-col items-center sm:gap-8 gap-4 justify-center">
+                            <span style="color:#2B5B84" class="text-2xl font-black">IP Rotation</span>
+                            <div style="color:#393F45" class="flex text_advanced flex-col font-light items-center justify-center">
                                 <span>Enhance Your Web Scraping </span>
                                 <span> Efficiency with IP Rotation</span>
                             </div>
@@ -270,143 +285,183 @@
 
     </section>
     <section
-        class="section3 relative gap-10 justify-center items-center flex-col flex xl:pt-6 xl:pb-14 lg:pb-46 md:pb-14 pb-8 xl:p-16 lg:p-14 p-8">
+        class="section3 relative gap-10 justify-center items-center flex-col flex xl:pt-6 xl:pb-14 lg:pb-46 md:pb-14 pb-8 xl:p-16 lg:p-14 p-4">
         <div
-            class="xl:text-4xl xl:flex  text-2xl  flex-col items-center justify-center font-bold customer_about_scrapulse_span animation-text">
+            class="xl:text-4xl  sm:flex text-center  text-xl  flex-col items-center justify-center font-bold customer_about_scrapulse_span animation-text">
             <span>What Our Customers are Saying About</span>
-            <span>Scrapulse</span>
+            <span class="w-full text-center">Scrapulse</span>
         </div>
-        <div class="slideshow flex items-center justify-center">
-            <div class="flex gap-4 items-center xl:flex-nowrap lg:flex-nowrap flex-wrap">
-                <!-- Slide 1 -->
-                <div class="mt-7 w-full relative flex flex-col slide active">
+        <div class="wrapper">
+            <i id="left" class="fa-solid z-10 fa-angle-left"></i>
+            <ul class="carousel">
+                <li class="mt-7 card w-full relative flex flex-col  slide active">
                     <div class="">
-                        <img src="./public/rectangels/Rectangle 1212.png" alt="">
+                        <img src="./public/rectangels/Rectangle 1212.png" alt="" />
                     </div>
 
-                    <div class="absolute xl:pl-4 xl:pr-4 xl:left-4 pb-8 flex flex-col items-start gap-1 xl:gap-4 justify-start">
-                        <img class="xl:pt-4" src="./public/customer_images/image 260.png" alt="">
-                        <div style="color:#323C46" class="font-light pr-4 w-64 text-sm">
-                            <span>Scrapulse is a good company in terms of Speed and support.. almost in everything. I
-                                really like the servers ... </span>
-                            <span style="color:#1181E1" class="cursor-pointer">more</span>
+                    <div
+                        class="absolute xl:pl-4 xl:pr-4 xl:left-8 pb-8 flex flex-col items-start gap-1 xl:gap-4 justify-start">
+                        <img class="xl:pt-4" src="./public/customer_images/image 260.png" alt="" />
+                        <div style="color: #323c46" class="font-light pr-4 w-64 text-sm">
+                            <span>Scrapulse is a good company in terms of Speed and support..
+                                almost in everything. I really like the servers ...
+                            </span>
+                            <span style="color: #1181e1" class="cursor-pointer">more</span>
                         </div>
                         <div class="flex justify-between items-center gap-4">
                             <div class="flex flex-col">
-                                <span class="font-semibold" style="color:#2B5B84; font-family: Poppins;">Matt
+                                <span class="font-semibold" style="color: #2b5b84; font-family: Poppins">Matt
                                     Willson</span>
-                                <span class="text-sm" style="color:#393F45; font-family: Poppins;">Apr 16, 2023</span>
+                                <span class="text-sm" style="color: #393f45; font-family: Poppins">Apr 16, 2023</span>
                             </div>
                             <div>
-                                <img src="./public/customer_images/image 210.png" alt="">
+                                <img src="./public/customer_images/image 210.png" alt="" />
                             </div>
                         </div>
                     </div>
-                </div>
-
-                <!-- Slide 2 -->
-                <div class="mt-7 w-full relative flex flex-col slide">
+                </li>
+                <li class="mt-7 card  w-full relative flex flex-col slide">
                     <div class="">
-                        <img src="./public/rectangels/Rectangle 1212.png" alt="">
+                        <img src="./public/rectangels/Rectangle 1212.png" alt="" />
                     </div>
 
                     <div class="absolute xl:pl-4 xl:pr-4 left-4 pb-8 flex flex-col items-start gap-4 justify-start">
-                        <img class="xl:pt-4" src="./public/customer_images/image 214.png" alt="">
-                        <div style="color:#323C46" class="font-light w-64 pr-4 text-sm">
-                            <span>It is highly recommended after a long research for my startup over web hosting. I
-                                found this full features and ... </span>
-                            <span style="color:#1181E1" class="cursor-pointer">more</span>
+                        <img class="xl:pt-4" src="./public/customer_images/image 214.png" alt="" />
+                        <div style="color: #323c46" class="font-light w-64 pr-4 text-sm">
+                            <span>It is highly recommended after a long research for my startup
+                                over web hosting. I found this full features and ...
+                            </span>
+                            <span style="color: #1181e1" class="cursor-pointer">more</span>
                         </div>
                         <div class="flex justify-between items-center gap-4">
                             <div class="flex flex-col">
-                                <span class="font-semibold" style="color:#2B5B84; font-family: Poppins;">Jhonson
+                                <span class="font-semibold" style="color: #2b5b84; font-family: Poppins">Jhonson
                                     A.</span>
-                                <span class="text-sm" style="color:#393F45; font-family: Poppins;">Apr 16, 2023</span>
+                                <span class="text-sm" style="color: #393f45; font-family: Poppins">Apr 16, 2023</span>
                             </div>
                             <div>
-                                <img src="./public/customer_images/XMLID_15_.png" alt="">
+                                <img src="./public/customer_images/XMLID_15_.png" alt="" />
                             </div>
                         </div>
                     </div>
-                </div>
-
-                <!-- Slide 3 -->
-                <div class="mt-7 w-full relative flex flex-col slide">
+                </li>
+                <li class="mt-7 card w-full relative flex flex-col slide">
                     <div class="">
-                        <img src="./public/rectangels/Rectangle 1212.png" alt="">
+                        <img src="./public/rectangels/Rectangle 1212.png" alt="" />
                     </div>
 
                     <div class="absolute xl:pl-4 xl:pr-4 left-4 pb-8 flex flex-col items-start gap-4 justify-start">
-                        <img class="xl:pt-4" src="./public/customer_images/image 215.png" alt="">
-                        <div style="color:#323C46" class="font-light pr-4 w-64 text-sm">
-                            <span>Scrapulse is a good company in terms of Speed and support.. almost in everything. I
-                                really like the servers ... </span>
-                            <span style="color:#1181E1" class="cursor-pointer">more</span>
+                        <img class="xl:pt-4" src="./public/customer_images/image 215.png" alt="" />
+                        <div style="color: #323c46" class="font-light pr-4 w-64 text-sm">
+                            <span>Scrapulse is a good company in terms of Speed and support..
+                                almost in everything. I really like the servers ...
+                            </span>
+                            <span style="color: #1181e1" class="cursor-pointer">more</span>
                         </div>
                         <div class="flex justify-between items-center gap-4">
                             <div class="flex flex-col">
-                                <span class="font-semibold" style="color:#2B5B84; font-family: Poppins;">Matt
+                                <span class="font-semibold" style="color: #2b5b84; font-family: Poppins">Matt
                                     Willson</span>
-                                <span class="text-sm" style="color:#393F45; font-family: Poppins;">Apr 16, 2023</span>
+                                <span class="text-sm" style="color: #393f45; font-family: Poppins">Apr 16, 2023</span>
                             </div>
                             <div>
-                                <img src="./public/customer_images/XMLID_15_.png" alt="">
+                                <img src="./public/customer_images/XMLID_15_.png" alt="" />
                             </div>
                         </div>
                     </div>
-                </div>
-
-                <!-- Slide 4 -->
-                <div class="mt-7 w-full relative flex flex-col slide">
+                </li>
+                <li class="mt-7 card w-full relative flex flex-col slide">
                     <div class="">
-                        <img src="./public/rectangels/Rectangle 1212.png" alt="">
+                        <img src="./public/rectangels/Rectangle 1212.png" alt="" />
                     </div>
 
                     <div class="absolute xl:pl-4 xl:pr-4 left-4 pb-8 flex flex-col items-start gap-4 justify-start">
-                        <img class="xl:pt-4" src="./public/customer_images/image 260.png" alt="">
-                        <div style="color:#323C46" class="font-light w-64 pr-4 text-sm">
-                            <span>Scrapulse is a good company in terms of Speed and support.. almost in everything. I
-                                really like the servers ... </span>
-                            <span style="color:#1181E1" class="cursor-pointer">more</span>
+                        <img class="xl:pt-4" src="./public/customer_images/image 260.png" alt="" />
+                        <div style="color: #323c46" class="font-light w-64 pr-4 text-sm">
+                            <span>Scrapulse is a good company in terms of Speed and support..
+                                almost in everything. I really like the servers ...
+                            </span>
+                            <span style="color: #1181e1" class="cursor-pointer">more</span>
                         </div>
                         <div class="flex justify-between items-center gap-4">
                             <div class="flex flex-col">
-                                <span class="font-semibold" style="color:#2B5B84; font-family: Poppins;">Matt
+                                <span class="font-semibold" style="color: #2b5b84; font-family: Poppins">Matt
                                     Willson</span>
-                                <span class="text-sm" style="color:#393F45; font-family: Poppins;">Apr 16, 2023</span>
+                                <span class="text-sm" style="color: #393f45; font-family: Poppins">Apr 16, 2023</span>
                             </div>
                             <div>
-                                <img src="./public/customer_images/image 210.png" alt="">
+                                <img src="./public/customer_images/image 210.png" alt="" />
                             </div>
                         </div>
                     </div>
-                </div>
+                </li>
+                <li class="mt-7 card  w-full relative flex flex-col slide">
+                    <div class="">
+                        <img src="./public/rectangels/Rectangle 1212.png" alt="" />
+                    </div>
 
-                <!-- slide 5 extra -->
-                
-            </div>
+                    <div class="absolute xl:pl-4 xl:pr-4 left-4 pb-8 flex flex-col items-start gap-4 justify-start">
+                        <img class="xl:pt-4" src="./public/customer_images/image 214.png" alt="" />
+                        <div style="color: #323c46" class="font-light w-64 pr-4 text-sm">
+                            <span>It is highly recommended after a long research for my startup
+                                over web hosting. I found this full features and ...
+                            </span>
+                            <span style="color: #1181e1" class="cursor-pointer">more</span>
+                        </div>
+                        <div class="flex justify-between items-center gap-4">
+                            <div class="flex flex-col">
+                                <span class="font-semibold" style="color: #2b5b84; font-family: Poppins">Jhonson
+                                    A.</span>
+                                <span class="text-sm" style="color: #393f45; font-family: Poppins">Apr 16, 2023</span>
+                            </div>
+                            <div>
+                                <img src="./public/customer_images/XMLID_15_.png" alt="" />
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="mt-7  card w-full relative flex flex-col slide active">
+                    <div class="">
+                        <img src="./public/rectangels/Rectangle 1212.png" alt="" />
+                    </div>
 
-            <!-- Slide arrows -->
-            <div class="absolute top-64 right-2 slide-arrow" data-direction="next">
-                <img src="./public/customer_images/Group 1000006267.png" alt="">
-            </div>
-            <div class="absolute top-64 left-2 slide-arrow" data-direction="prev">
-                <img src="./public/customer_images/Group 1000006271.png" alt="">
-            </div>
+                    <div
+                        class="absolute xl:pl-4 xl:pr-4 xl:left-4 pb-8 flex flex-col items-start gap-1 xl:gap-4 justify-start">
+                        <img class="xl:pt-4" src="./public/customer_images/image 260.png" alt="" />
+                        <div style="color: #323c46" class="font-light pr-4 w-64 text-sm">
+                            <span>Scrapulse is a good company in terms of Speed and support..
+                                almost in everything. I really like the servers ...
+                            </span>
+                            <span style="color: #1181e1" class="cursor-pointer">more</span>
+                        </div>
+                        <div class="flex justify-between items-center gap-4">
+                            <div class="flex flex-col">
+                                <span class="font-semibold" style="color: #2b5b84; font-family: Poppins">Matt
+                                    Willson</span>
+                                <span class="text-sm" style="color: #393f45; font-family: Poppins">Apr 16, 2023</span>
+                            </div>
+                            <div>
+                                <img src="./public/customer_images/image 210.png" alt="" />
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <i id="right" class="fa-solid fa-angle-right"></i>
         </div>
         <button style="color:#2B5B84; background-color: #FFC815;"
             class="button_contact_us p-3 xl:mr-12 hover:bg-yellow-300 xl:shadow-2xl w-40 font-bold">CONTACT US</button>
     </section>
 
     <section
-        class="section9 gap-14    justify-center items-center flex-col flex xl:pt-6 xl:pb-14  lg:pb-46 md:pb-14 pb-8 ">
+        class="section9 gap-14     justify-center items-center flex-col flex xl:pt-6 xl:pb-14  lg:pb-46 md:pb-14 pb-8 ">
         <div
             class="xl:text-4xl flex flex-col items-center justify-center customer_about_scrapulse_span font-bold animation-text">
             <span>Trusted by Thousands Worldwide</span>
 
         </div>
         <div style="background-image: url(./public/trustedby/Group\ 177.png);"
-            class="h-56 flex gap-8 items-center justify-between p-8  trusted_by_thousands">
+            class="h-32 sm:h-48 flex gap-8 items-center justify-between p-8  trusted_by_thousands">
             <div>
                 <img src="./public/trustedby/152,000+ Customers Worldwide.png" alt="">
             </div>
@@ -422,92 +477,89 @@
         </div>
     </section>
     <section
-        class="section9 gap-14    justify-center items-center flex-col flex xl:pt-6 xl:pb-14  lg:pb-46 md:pb-14 pb-8 ">
+        class="section9 gap-14 sm:pl-24 sm:pr-24 pl-4 pr-4  justify-center items-center flex-col flex xl:pt-6 xl:pb-14  lg:pb-46 md:pb-14 pb-8 ">
         <span class="xl:text-4xl font-bold lg:text-2xl text-xl top_solutions">Top Solutions</span>
         <div class="flex flex-col items-center justify-center gap-4">
-            <div class="flex items-center justify-center gap-8 flex-wrap">
+            <div class="flex gap-2 xl:flex-nowrap flex-wrap items-center justify-center">
+                <div class="flex gap-2">
+                    <div class="relative">
+                        <img src="./public/rectangels/Rectangle 1213.png" alt="">
+                        <div class="absolute top-5 left-4">
+                            <img src="./public/solutions/stackoverflow-ar21 1.png" alt="">
+                        </div>
+                    </div>
+                    <div class="relative">
+                        <img src="./public/rectangels/Rectangle 1213.png" alt="">
+                        <div class="absolute top-5 left-4">
+                            <img src="./public/solutions/DuckDuckGo-Symbol 1.png" alt="">
+                        </div>
+                    </div>
 
-                <div class="relative">
-                    <img src="./public/rectangels/Rectangle 1213.png" alt="">
-                    <div class="absolute top-5 left-4">
-                        <img src="./public/solutions/stackoverflow-ar21 1.png" alt="">
+                    <div class="relative">
+                        <img src="./public/rectangels/Rectangle 1213.png" alt="">
+                        <div class="absolute top-5 left-4">
+                            <img src="./public/solutions/Deviantart-Logo-2014 1.png" alt="">
+                        </div>
                     </div>
                 </div>
-                <div class="relative">
-                    <img src="./public/rectangels/Rectangle 1213.png" alt="">
-                    <div class="absolute top-5 left-4">
-                        <img src="./public/solutions/DuckDuckGo-Symbol 1.png" alt="">
-                    </div>
-                </div>
 
-                <div class="relative">
-                    <img src="./public/rectangels/Rectangle 1213.png" alt="">
-                    <div class="absolute top-5 left-4">
-                        <img src="./public/solutions/Deviantart-Logo-2014 1.png" alt="">
-                    </div>
-                </div>
 
-                <div class="relative">
+                <div class="relative lg:block hidden">
                     <img src="./public/rectangels/Rectangle 1213.png" alt="">
                     <div class="absolute top-14 left-6">
                         <img src="./public/solutions/1280px-Booking.com_Logo 1.png" alt="">
                     </div>
                 </div>
-                <div class="relative">
+                <div class="relative lg:block hidden">
                     <img src="./public/rectangels/Rectangle 1213.png" alt="">
                     <div class="absolute top-2 left-9">
                         <img src="./public/solutions/amazon 1.png" alt="">
                     </div>
                 </div>
             </div>
+            <div class="flex gap-2 xl:flex-nowrap flex-wrap items-center justify-center">
 
-
-
-            <div class="flex items-center justify-center gap-8 flex-wrap">
-
-                <div class="relative">
+                <div class="relative lg:block hidden">
                     <img src="./public/rectangels/Rectangle 1213.png" alt="">
                     <div class="absolute top-2 left-14">
                         <img src="./public/solutions/twitter-logo-twitter-icon-transparent-free-free-png 1.png" alt="">
                     </div>
                 </div>
-
-                <div class="relative">
+                <div class="relative lg:block hidden">
                     <img src="./public/rectangels/Rectangle 1213.png" alt="">
                     <div class="absolute top-1 left-12">
                         <img src="./public/solutions/expedia-logo 1.png" alt="">
                     </div>
                 </div>
-
-                <div class="relative">
-                    <img src="./public/rectangels/Rectangle 1213.png" alt="">
-                    <div class="absolute top-10 left-4">
-                        <img src="./public/solutions/images 1.png" alt="">
+                <div class="flex gap-2">
+                    <div class="relative">
+                        <img src="./public/rectangels/Rectangle 1213.png" alt="">
+                        <div class="absolute top-10 left-4">
+                            <img src="./public/solutions/images 1.png" alt="">
+                        </div>
+                    </div>
+                    <div class="relative">
+                        <img src="./public/rectangels/Rectangle 1213.png" alt="">
+                        <div class="absolute top-0 left-10">
+                            <img src="./public/solutions/linkedin-logo 1 (1).png" alt="">
+                        </div>
+                    </div>
+                    <div class="relative">
+                        <img src="./public/rectangels/Rectangle 1213.png" alt="">
+                        <div class="absolute top-2 left-7">
+                            <img src="./public/solutions/Reddit-Logo 1.png" alt="">
+                        </div>
                     </div>
                 </div>
 
-                <div class="relative">
-                    <img src="./public/rectangels/Rectangle 1213.png" alt="">
-                    <div class="absolute top-0 left-10">
-                        <img src="./public/solutions/linkedin-logo 1 (1).png" alt="">
-                    </div>
-                </div>
-
-                <div class="relative">
-                    <img src="./public/rectangels/Rectangle 1213.png" alt="">
-                    <div class="absolute top-2 left-7">
-                        <img src="./public/solutions/Reddit-Logo 1.png" alt="">
-                    </div>
-                </div>
             </div>
         </div>
         <div>
             <span><img src="./public/solutions/Group 174.png" alt=""></span>
         </div>
     </section>
-
     <section
-        class="section10  gap-14    justify-center items-center flex-col flex xl:pt-6 xl:pb-14 p-14 lg:pb-46 md:pb-14 pb-8">
+        class="section10  gap-14 xl:pl-24 xl:pr-24 lg:pl-24 lg:pr-24     justify-center items-center flex-col flex xl:pt-6 xl:pb-14 pl-4 pr-4 lg:pb-46 md:pb-14 pb-8">
         <div>
             <span class="xl:text-4xl font-bold lg:text-2xl text-xl top_solutions">Learn & Be Inspired</span>
         </div>
@@ -643,7 +695,7 @@
                 <img src="./public/footer/Group 1000006208.png" alt="">
             </div>
             <div
-                class="flex xl:gap-8  xl:flex-row lg:flex-row md:flex-row flex-col lg:gap-5 gap-4 text-white items-start justify-between">
+                class="flex xl:gap-8  xl:flex-row lg:flex-row md:flex-row flex-col lg:gap-5 gap-4 text-white items-center sm:items-start justify-between">
                 <div class="flex-1 flex items-center justify-center gap-4 flex-col">
                     <span>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
                         been the industry's standard dummy text ever since the 1500s, when an unknown printer took a
@@ -707,7 +759,7 @@
         </div>
     </div>
     <script src="./script.js"></script>
-
+    <script src="./slider.js"></script>
 
 </body>
 
