@@ -1,24 +1,20 @@
 /* Import Google font - Poppins */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
-
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
 
-.wrapper {
+.wrapper_slider {
+  max-width: 1100px;
   width: 100%;
   position: relative;
 }
-
-.wrapper i {
+.wrapper_slider i {
   top: 50%;
   height: 50px;
   width: 50px;
   cursor: pointer;
-  font-size: 1.25rem;
+  /* font-size: 1.25rem; */
   position: absolute;
   text-align: center;
   line-height: 50px;
@@ -28,71 +24,80 @@
   transform: translateY(-50%);
   transition: transform 0.1s linear;
 }
-
-.wrapper i:active {
+.wrapper_slider i:active {
   transform: translateY(-50%) scale(0.85);
 }
-
-.wrapper i:first-child {
+.wrapper_slider i:first-child {
   left: -22px;
 }
-
-.wrapper i:last-child {
+.wrapper_slider i:last-child {
   right: -22px;
 }
-
-.wrapper .carousel {
+.wrapper_slider .carousel {
   display: grid;
   grid-auto-flow: column;
-  grid-auto-columns: calc((100% / 4) - 12px);
+  grid-auto-columns: calc((100% / 3) - 12px);
   overflow-x: auto;
   scroll-snap-type: x mandatory;
   gap: 16px;
   border-radius: 8px;
   scroll-behavior: smooth;
   scrollbar-width: none;
-  justify-content: center; /* Add this line to center cards on small screens */
 }
-
 .carousel::-webkit-scrollbar {
   display: none;
 }
-
 .carousel.no-transition {
   scroll-behavior: auto;
 }
-
 .carousel.dragging {
   scroll-snap-type: none;
   scroll-behavior: auto;
 }
-
-.carousel.dragging .card {
+.carousel.dragging .card_slider {
   cursor: grab;
   user-select: none;
 }
 
-@media screen and (max-width: 900px) {
-  .wrapper .carousel {
-    grid-auto-columns: calc((100% / 2) - 9px);
-  }
-  .navbar_button_ok {
-    width: 500px;
-  }
+.carousel .card_slider {
+  scroll-snap-align: start;
+  height: 300px;
+  background: #fff;
+  cursor: pointer;
+  border-radius: 8px;
+}
+.carousel .card_slider .img {
+  background: #8b53ff;
+  height: 148px;
+  width: 148px;
+  border-radius: 50%;
+}
+.card_slider {
+  border: 1px solid #c8c9c9;
+}
+.card_slider .img img {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #fff;
+}
+.carousel .card_slider h2 {
+  font-weight: 500;
+  margin: 30px 0 5px;
+}
+.carousel .card_slider span {
+  color: #6a6d78;
 }
 
-.small_screen_texts {
-  font-size: 20px;
+@media screen and (max-width: 900px) {
+  .wrapper_slider .carousel {
+    grid-auto-columns: calc((100% / 2) - 9px);
+  }
 }
 
 @media screen and (max-width: 600px) {
-  .wrapper .carousel {
-    grid-auto-columns: 70%;
-  }
-  .small_screen_texts {
-    font-size: 17px;
-  }
-  .navbar_button_ok {
-    width: 100%;
+  .wrapper_slider .carousel {
+    grid-auto-columns: 100%;
   }
 }

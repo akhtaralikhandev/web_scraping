@@ -405,3 +405,8 @@ body {
     left: 10%;
   }
 }
+@media only screen and (max-width: 500px) {
+  .img_width_div {
+    width: 300px;
+  }
+}
