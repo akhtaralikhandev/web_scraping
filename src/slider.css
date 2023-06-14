@@ -61,7 +61,7 @@
 
 .carousel .card_slider {
   scroll-snap-align: start;
-  height: 300px;
+  height: 260px;
   background: #fff;
   cursor: pointer;
   border-radius: 8px;
@@ -97,6 +97,9 @@
 }
 
 @media screen and (max-width: 600px) {
+  .card_slider {
+    height: 250px;
+  }
   .wrapper_slider .carousel {
     grid-auto-columns: 100%;
   }
