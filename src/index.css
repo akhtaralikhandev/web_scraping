@@ -460,7 +460,8 @@ body {
   }
 
   .text_advanced {
-    font-size: 18px;
+    font-size: 15px;
+    text-align: center;
   }
 }
 
