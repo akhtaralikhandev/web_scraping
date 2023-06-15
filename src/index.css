@@ -508,7 +508,24 @@ body {
 .container_div6 {
   background-image: url("./public/rectangles2/Group 1000006277.png");
 }
-
+.container_div7 {
+  background-image: url("./public/rounded/Group 1000006265.png");
+}
+.container_div8 {
+  background-image: url("./public/rounded/Group 1000006266.png");
+}
+.container_div9 {
+  background-image: url("./public/rounded/Group 1000006267.png");
+}
+.container_div10 {
+  background-image: url("./public/rounded/Group 1000006268.png");
+}
+.container_div11 {
+  background-image: url("./public/rounded/Group 1000006269.png");
+}
+.container_div12 {
+  background-image: url("./public/rounded/Group 1000006270.png");
+}
 .container_div {
   height: 380px;
   width: 380px;
@@ -531,6 +548,10 @@ body {
 }
 @media only screen and (max-width: 600px) {
   .services_image_scrapulse {
+    width: 330px;
+  }
+  .container_div {
+    height: 340px;
     width: 340px;
   }
 }

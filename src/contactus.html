@@ -14,13 +14,13 @@
 
 <body>
     <!-- navbar -->
-     <nav id="navbar" class="p-4 flex justify-between  xl:pr-14 lg:pr-32 lg:pl-14 md:text-xl md:pr-14 nav">
+    <nav id="navbar" class="p-4 flex justify-between  xl:pr-14 lg:pr-32 lg:pl-14 md:text-xl md:pr-14 nav">
         <a style="flex-grow: 5;" href="index.html" class=" xl:pl-20">
             <div class="logo d cursor-pointer md:text-3xl font-bold">
                 <img class="xl:h-14 h-12" src="./public/footer/Group 1000006208.png" alt="">
             </div>
         </a>
-        <ul style="flex-grow: 4;" class="nav-links flex  gap-8  items-center justify-end  xl:pr-20 ">
+        <ul style="flex-grow: 4;" class="nav-links flex lg:gap-4 gap-4  xl:gap-6  items-center justify-end  xl:pr-20 ">
             <li class="flex gap-8"><a href="whyus.html"><span>Why us?</span>
                     <i class="fa fa-caret-down" aria-hidden="true"></i></a></li>
             <li class="flex gap-8"> <a href="services.html"><span> Services</span> <i class="fa fa-caret-down"
@@ -29,9 +29,12 @@
                         aria-hidden="true"></i></a></li>
             <li class="flex gap-8"><a href="blog.html"><span>Blog </span>
             <li style="background-color:#FFB400; font-family: Poppins; color:#143F64"
-                class="xl:p-3 shadow-lg lg:p-3 talk-to_expert  hover:bg-yellow-500 flex items-center font-bold "><a
-                    class="xl:p-2 lg:p-2 p-1  shadow-lg" href="contactus.html">Talk to an
-                    Expert</a>
+                class="xl:p-3 shadow-lg lg:p-3 p-1   hover:bg-yellow-500 hidden lg:flex md:flex xl:flex items-center font-bold ">
+                <a class="xl:p-2  lg:p-2   shadow-lg" href="contactus.html">Talk to an Expert</a>
+            </li>
+            <li style="background-color:#FFB400; font-family: Poppins; color:#143F64"
+                class="xl:p-3 shadow-lg lg:p-3 p-1 navbar_buttons block lg:hidden md:hidden xl:hidden  hover:bg-yellow-500  items-center font-bold ">
+                <a class="xl:p-2  lg:p-2    shadow-lg" href="contactus.html">contact us</a>
             </li>
         </ul>
         <div class="burger">
@@ -39,14 +42,12 @@
             <div class="line2"></div>
             <div class="line3"></div>
         </div>
-
         </div>
     </nav>
-    <div class="w-1 h-1 navbar_line">
-    <div class="w-1 h-1 navbar_line">
+    <div class="w-1 h-1 navbar_line"></div>
         <section
-            class="section11 section9 gap-14   items-start flex-col flex xl:pt-10 xl:p-24  lg:pb-46 md:pb-14 pb-8 pr-24">
-            <div class="section_wrapper flex gap-6 xl:gap-14 flex-col">
+            class="section11 section9 sm:gap-14 gap-4   items-start flex-col flex sm::pt-10 sm:p-24  lg:pb-46 p-4 md:pb-14 sm:pb-8 sm:pr-24">
+            <div class="section_wrapper block sm:flex gap-6 xl:gap-14 flex-col">
                 <span class="xl:text-5xl font-black lg:text-2xl text-xl" style="color:#143F64">Get a <span
                         style="color:#FFB400">Demo</span> for your actual use case </span>
                 <div class="flex flex-col gap-2 font-light" style="color:#323C46">
@@ -65,12 +66,12 @@
             </div>
         </section>
         <section
-            class="section11 section9 gap-14   items-start flex-col flex xl:pt-6 xl:p-24  lg:pb-14 md:pb-14 pb-8 pr-24">
+            class="section11 section9 gap-14 items-center  sm:items-start flex-col flex xl:pt-6 p-4 sm:p-24  lg:pb-14 md:pb-14 sm:pb-8 sm:pr-24">
             <span class="xl:text-5xl font-bold lg:text-2xl text-xl" style="color:#143F64">Book a <span
                     style="color:#FFB400">Meeting</span></span>
         </section>
-        <section style="font-family: 'Poppins';" class="xl:p-8 xl:pb-10 xl:pt-10 xl:pl-24 xl:pr-24 ">
-            <form class="lg:p-24 flex-col gap-6 w-full xl:pl-2 xl:pr-2 rounded-xl  flex justify-center items-center"
+        <section style="font-family: 'Poppins';" class="xl:p-8 xl:pb-10 sm:pt-10 sm:pl-24 sm:pr-24 ">
+            <form class="lg:p-24 flex-col gap-6 w-full p-4 sm:pl-2 sm:pr-2 rounded-xl  flex justify-center items-center"
                 action="" style="background-color: #E3F2FF;">
                 <div class="flex xl:gap-9 w-full gap-3 xl:pl-36 xl:pr-36">
                     <div class="flex w-full flex-col flex-1 gap-2 ">
@@ -113,20 +114,20 @@
                 </div>
                 <div class="flex flex-col gap-2 w-full xl:pl-36 xl:mt-4 xl:pr-36 ">
                     <button style="background-color: #143F64;"
-                        class="w-full xl:p-3 rounded-lg text-white xl:text-xl hover:bg-slate-500">Request a
+                        class="w-full p-2 sm:p-3 rounded-lg text-white xl:text-xl hover:bg-slate-500">Request a
                         Demo</button>
                 </div>
 
             </form>
         </section>
-       <footer style="background-image: url(./public/footer/Group\ 180.png);"
+        <footer style="background-image: url(./public/footer/Group\ 180.png);"
         class="footer section3 1 xl:flex-row xl:gap-0 lg:gap-0 gap-4 lg:flex-row justify-center items-center flex-col flex xl:pt-16 xl:pb-24 lg:pb-16 md:pb-14 pb-8 xl:p-16 lg:p-14 p-8">
         <div class="footer_wrapper flex gap-8  flex-col">
             <div>
                 <img src="./public/footer/Group 1000006208.png" alt="">
             </div>
             <div
-                class="flex xl:gap-8  xl:flex-row lg:flex-row md:flex-row flex-col lg:gap-5 gap-4 text-white items-start justify-between">
+                class="flex xl:gap-8  xl:flex-row lg:flex-row md:flex-row flex-col lg:gap-5 gap-4 text-white items-center sm:items-start justify-between">
                 <div class="flex-1 flex items-center justify-center gap-4 flex-col">
                     <span>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
                         been the industry's standard dummy text ever since the 1500s, when an unknown printer took a
@@ -161,7 +162,7 @@
                 </div>
                 <div class="flex-1 flex items-center justify-center gap-4 flex-col">
                     <span>Follow</span>
-                    <ul class="flex gap-3">
+                    <ul class="flex gap-8 sm:gap-3">
                         <li class="cursor-pointer hover:text-gray-300"><img src="./public/footer/Vector.png" alt="">
                         </li>
                         <li class="cursor-pointer hover:text-gray-300"><img src="./public/footer/Vector (1).png" alt="">
@@ -179,8 +180,8 @@
             <i class="fa fa-arrow-up text-white" aria-hidden="true"></i>
         </button>
 
-    </footer>
-    <div style="background-color: #143F64;"
+       </footer>
+      <div style="background-color: #143F64;"
         class="footer section3 text-white 1 xl:flex-row xl:gap-0 lg:gap-0 xl:pl-16 xl:pr-16 pl-4 pr-4 p-2 gap-4 lg:flex-row justify-between items-center flex-col flex  ">
         <div>
             <span>Copyright © 2023 WSaaS. All Rights Reserved.</span>
@@ -188,7 +189,7 @@
         <div>
             <span>Design:</span>
         </div>
-    </div>
+      </div>
         <script src="./script.js"></script>
 </body>
 
